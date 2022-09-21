@@ -15,6 +15,20 @@ export const GlobalStyles = () => {
           background-color: ${theme.colors.background};
           color: ${theme.colors.text};
         }
+
+        /* css scroll */
+        ::-webkit-scrollbar {
+          width: 5px;
+        }
+
+        ::-webkit-scrollbar-track {
+          background: ${theme.colors.background};
+        }
+
+        ::-webkit-scrollbar-thumb {
+          background: ${theme.colors.accent};
+          border-radius: 5px;
+        }
       `}
     />
   );
