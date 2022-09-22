@@ -48,10 +48,10 @@ const Hero = () => {
       <img
         className="w-32 h-32 rounded-full relative mx-auto object-cover"
         src="/assets/svg/foto.svg"
-        alt="Profile"
+        alt="Foto de perfil"
       />
       <div>
-        <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[5px]">
+        <h2 className="text-sm uppercase text-gray-300 pb-2 tracking-[5px]">
           Desenvolvedor Front-end
         </h2>
         <h1 className="text-2xl lg:text-5xl font-semibold px-10">
@@ -74,8 +74,8 @@ const Hero = () => {
           >
             <Link href={link.href}>
               <button
-                className="px-6 py-2 border border-[#242424] rounded-full uppercase text-xs 
-                         tracking-widest text-gray-500 transition-all hover:border-accent hover:text-accent"
+                className="px-6 py-2 border border-gray-500 rounded-full uppercase text-xs 
+                         tracking-widest text-gray-100 transition-all hover:border-accent hover:text-accent"
               >
                 {link.text}
               </button>

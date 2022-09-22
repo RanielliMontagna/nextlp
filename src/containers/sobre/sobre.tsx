@@ -15,6 +15,7 @@ const Sobre = () => {
             x: -200,
             opacity: 0,
           }}
+          alt="Foto de perfil"
           transition={{
             duration: 0.8,
           }}

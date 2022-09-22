@@ -21,16 +21,20 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="Ranielli Montagna é um desenvolvedor de software apaixonado por tecnologia e inovação. Ele é um entusiasta de tecnologias web e mobile, e está sempre em busca de novos desafios."
         />
 
+        {/* Robots */}
+        <meta name="robots" content="all" />
+
         {/* Open Graph */}
         <meta property="og:title" content="Ranielli Montagna" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.ranimontagna.com/" />
-        <meta property="og:image" content="./assets/logo/512.png" />
+        <meta property="og:image" content="/assets/logo/512.png" />
+        <meta property="fb:app_id" content="3803398276428135" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:url" content="https://www.ranimontagna.com/" />
-        <meta name="twitter:creator" content="@ranimontagna" />
+        <meta name="twitter:creator" content="@ranii_montagna" />
         <meta name="twitter:title" content="Ranielli Montagna" />
         <meta
           name="twitter:description"
