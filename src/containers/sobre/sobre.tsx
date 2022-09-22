@@ -1,20 +1,10 @@
 import { motion } from 'framer-motion';
+import { SectionTitle } from '../../components/sectionTitle/sectionTitle';
+
 const Sobre = () => {
   return (
     <div className="pb-16">
-      <motion.div
-        initial={{
-          opacity: 0,
-          scale: 0,
-        }}
-        transition={{
-          duration: 0.8,
-        }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        className="flex justify-center pb-16"
-      >
-        <h3 className="top-24 uppercase tracking-[15px] text-2xl fill-text">Sobre</h3>
-      </motion.div>
+      <SectionTitle title="Sobre" />
 
       <div
         className="flex flex-col relative text-center items-center
@@ -42,9 +32,9 @@ const Sobre = () => {
               duration: 1.0,
             }}
             whileInView={{ opacity: 1, x: 0 }}
-            className="text-4xl font-semibold"
+            className="text-4xl font-semibold mt-8"
           >
-            Olá, meu nome é <span className="underline decoration-accent">Ranielli</span>
+            Olá, meu nome é <span className="text-accent underline">Ranielli</span>
           </motion.h4>
           <motion.p
             initial={{
