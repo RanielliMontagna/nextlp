@@ -2,6 +2,10 @@ import { Header } from '../containers/header/header';
 import { Hero } from '../containers/hero/hero';
 import { Sobre } from '../containers/sobre/sobre';
 import { Contato } from './contato/contato';
+import { Experiencias } from './experiencias/experiencias';
+import { Footer } from './footer/Footer';
+import { Projetos } from './projetos/projetos';
+import { Tecnologias } from './tecnologias/tecnologias';
 
 const Home = () => {
   return (
@@ -16,20 +20,24 @@ const Home = () => {
         <Sobre />
       </section>
 
-      {/* <section id="tecnologias">
-        <Tecnologias />
-      </section> */}
+      <section id="experiencias">
+        <Experiencias />
+      </section>
 
-      {/* <section id="projetos">
+      <section id="tecnologias">
+        <Tecnologias />
+      </section>
+
+      <section id="projetos">
         <Projetos />
-      </section> */}
+      </section>
 
       <section id="contato">
         <Contato />
       </section>
 
       <footer>
-        Feito por <span>Ranielli Montagna</span>
+        <Footer />
       </footer>
     </div>
   );

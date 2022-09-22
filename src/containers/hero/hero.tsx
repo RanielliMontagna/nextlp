@@ -21,8 +21,8 @@ const Hero = () => {
       href: '#experiencias',
     },
     {
-      text: 'Habilidades',
-      href: '#habilidades',
+      text: 'Tecnologias',
+      href: '#tecnologias',
     },
     {
       text: 'Projetos',
