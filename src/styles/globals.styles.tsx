@@ -6,14 +6,12 @@ export const GlobalStyles = () => {
     <Global
       styles={css`
         * {
-          box-sizing: border-box;
-          padding: 0;
-          margin: 0;
-
-          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, sans-serif;
-
-          background-color: ${theme.colors.background};
           color: ${theme.colors.text};
+        }
+
+        body {
+          background-color: ${theme.colors.background};
+          overflow-x: hidden;
         }
 
         /* css scroll */

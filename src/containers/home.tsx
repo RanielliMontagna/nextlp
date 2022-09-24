@@ -9,7 +9,7 @@ import { Tecnologias } from './tecnologias/tecnologias';
 
 const Home = () => {
   return (
-    <div className="h-screen snap-y snap-mandatory overflow-x-hidden">
+    <div className="snap-y snap-mandatory">
       <Header />
 
       <section id="hero">

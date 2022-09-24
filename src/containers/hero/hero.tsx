@@ -47,7 +47,7 @@ const Hero = () => {
     >
       <img
         className="w-32 h-32 rounded-full relative mx-auto object-cover"
-        src="/assets/svg/foto.svg"
+        src="/assets/svgs/foto.svg"
         alt="Foto de perfil"
       />
       <div>

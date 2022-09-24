@@ -20,7 +20,7 @@ const Sobre = () => {
             duration: 0.8,
           }}
           whileInView={{ opacity: 1, x: 0 }}
-          src="/assets/svg/foto.svg"
+          src="/assets/svgs/foto.svg"
           className=" md:mb-0 flex-shrink-0 object-cover w-56 h-56 rounded-full md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]"
         />
         <div className="space-y-10 px-0 md:px-10">

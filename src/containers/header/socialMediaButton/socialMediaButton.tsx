@@ -20,7 +20,10 @@ interface SocialMediaButtonProps {
 const SocialMediaButton = ({ Icon, link, alt }: SocialMediaButtonProps) => {
   return (
     <button onClick={() => window.open(link)} aria-label={alt}>
-      <Icon className="w-6 h-6 fill-zinc-500 md:hover:fill-text transition-all bg-transparent" />
+      <Icon
+        className="w-6 h-6 fill-zinc-500 hover:fill-accent transition-all first-letter:
+      hover:-translate-y-1 hover:scale-110 transform duration-300 ease-in-out"
+      />
     </button>
   );
 };

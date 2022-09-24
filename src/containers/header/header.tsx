@@ -6,7 +6,7 @@ import { SocialMediaButton } from './socialMediaButton/socialMediaButton';
 
 const Header = () => {
   return (
-    <header className="sticky top-0 flex justify-between max-w-7xl mx-auto z-10 p-4 bg-transparent">
+    <header className="sticky top-0 flex justify-between max-w-7xl mx-auto z-10 p-4">
       <motion.div
         initial={{
           x: -500,
@@ -21,7 +21,7 @@ const Header = () => {
         transition={{
           delay: 0.3,
         }}
-        className="flex gap-4 flex-1 justify-center md:flex-initial md:justify-start bg-transparent"
+        className="flex gap-4 flex-1 justify-center md:flex-initial md:justify-start"
       >
         <SocialMediaButton link={linkedin} Icon={FaLinkedinIn} alt="Linkedin" />
         <SocialMediaButton link={instagram} Icon={FaInstagram} alt="Instagram" />
@@ -42,9 +42,14 @@ const Header = () => {
         transition={{
           delay: 0.3,
         }}
-        className="items-center hidden md:flex"
+        className="items-center hidden md:flex cursor-pointer"
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
       >
-        🚧 Site em construção 🚧
+        <img
+          src="assets/svgs/logo.svg"
+          alt="Logo"
+          className="w-10 hover:scale-110 transform duration-300 ease-in-out"
+        />
       </motion.div>
     </header>
   );
