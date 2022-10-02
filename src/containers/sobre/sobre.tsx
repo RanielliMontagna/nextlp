@@ -1,7 +1,10 @@
 import { motion } from 'framer-motion';
 import { SectionTitle } from '../../components/sectionTitle/sectionTitle';
+import useWindowSize from '../../hooks/useWindowSize/useWindowSize';
 
 const Sobre = () => {
+  const { width } = useWindowSize();
+
   return (
     <div className="pb-16">
       <SectionTitle title="Sobre" />
@@ -26,26 +29,28 @@ const Sobre = () => {
         <div className="space-y-10 px-0 md:px-10">
           <motion.h4
             initial={{
-              x: 200,
+              y: width < 600 ? 30 : 0,
+              x: width < 600 ? 0 : 200,
               opacity: 0,
             }}
             transition={{
               duration: 1.0,
             }}
-            whileInView={{ opacity: 1, x: 0 }}
+            whileInView={{ opacity: 1, x: 0, y: 0 }}
             className="text-4xl font-semibold mt-8"
           >
             Olá, meu nome é <span className="text-accent underline">Ranielli</span>
           </motion.h4>
           <motion.div
             initial={{
-              x: 0,
+              y: width < 600 ? 30 : 0,
+              x: width < 600 ? 0 : 100,
               opacity: 0,
             }}
             transition={{
               duration: 1.2,
             }}
-            whileInView={{ opacity: 1, x: 0 }}
+            whileInView={{ opacity: 1, x: 0, y: 0 }}
           >
             <p className="text-sm md:text-md lg:text-lg text-justify">
               sou um desenvolvedor front-end apaixonado por tecnologia e design. Atualmente trabalho
