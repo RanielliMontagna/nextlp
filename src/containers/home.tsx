@@ -20,12 +20,12 @@ const Home = () => {
         <Sobre />
       </section>
 
-      <section id="experiencias">
-        <Experiencias />
-      </section>
-
       <section id="tecnologias">
         <Tecnologias />
+      </section>
+
+      <section id="experiencias">
+        <Experiencias />
       </section>
 
       <section id="projetos">

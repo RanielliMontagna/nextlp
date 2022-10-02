@@ -37,26 +37,27 @@ const Sobre = () => {
           >
             Olá, meu nome é <span className="text-accent underline">Ranielli</span>
           </motion.h4>
-          <motion.p
+          <motion.div
             initial={{
-              x: 500,
+              x: 0,
               opacity: 0,
             }}
             transition={{
               duration: 1.2,
             }}
             whileInView={{ opacity: 1, x: 0 }}
-            className="text-sm md:text-md lg:text-lg text-justify"
           >
-            sou um desenvolvedor front-end apaixonado por tecnologia e design. Atualmente trabalho
-            como desenvolvedor na <span className="font-semibold">SB Sistemas</span>. Sou formado em
-            Análise e Desenvolvimento de Sistemas pela{' '}
-            <span className="font-semibold">Universidade de Passo Fundo (UPF)</span>. Além disso,
-            sou um entusiasta de tecnologias web e mobile, e estou sempre em busca de novos
-            conhecimentos. Me considero uma pessoa proativa, comunicativa e que gosta de trabalhar
-            em equipe. Criei esse portfólio com o intuito de mostrar um pouco sobre mim. Espero que
-            você goste!
-          </motion.p>
+            <p className="text-sm md:text-md lg:text-lg text-justify">
+              sou um desenvolvedor front-end apaixonado por tecnologia e design. Atualmente trabalho
+              como desenvolvedor na <span className="font-semibold">SB Sistemas</span>. Sou formado
+              em Análise e Desenvolvimento de Sistemas pela{' '}
+              <span className="font-semibold">Universidade de Passo Fundo (UPF)</span>. Além disso,
+              sou um entusiasta de tecnologias web e mobile, e estou sempre em busca de novos
+              conhecimentos. Me considero uma pessoa proativa, comunicativa e que gosta de trabalhar
+              em equipe. Criei esse portfólio com o intuito de mostrar um pouco sobre mim. Espero
+              que você goste!
+            </p>
+          </motion.div>
         </div>
       </div>
     </div>
