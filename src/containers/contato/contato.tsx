@@ -7,9 +7,9 @@ const Contato = () => {
     <div className="py-16 max-w-7xl flex flex-col items-center text-center mx-auto p-8">
       <SectionTitle title="Contato" />
       <motion.div
-        initial={{ x: 0, opacity: 0 }}
+        initial={{ y: 50, opacity: 0 }}
         transition={{ duration: 1.2 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
       >
         <p className="max-w-4xl text-center text-lg">
           Embora eu não esteja atualmente procurando novas oportunidades, minha caixa de entrada
@@ -18,9 +18,9 @@ const Contato = () => {
         </p>
       </motion.div>
       <motion.div
-        initial={{ x: 0, opacity: 0 }}
+        initial={{ y: 50, opacity: 0 }}
         transition={{ duration: 1.2 }}
-        whileInView={{ x: 0, opacity: 1 }}
+        whileInView={{ y: 0, opacity: 1 }}
       >
         <button
           className="mt-4 px-6 py-2 border border-accent text-accent rounded-full

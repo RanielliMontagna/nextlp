@@ -1,21 +1,20 @@
-import { motion } from 'framer-motion';
-
 import { SectionTitle } from '../../components/sectionTitle/sectionTitle';
+import { listaProjetos } from './projetos.static';
+import { CardProjeto } from './cardProjeto/cardProjeto';
 
 const Projetos = () => {
   return (
     <div className="pb-16">
       <SectionTitle title="Projetos" />
 
-      <motion.div
-        initial={{ x: 0, opacity: 0 }}
-        transition={{ duration: 1 }}
-        whileInView={{ opacity: 1, x: 0 }}
-      >
-        <p className="text-2xl text-center mt-4 font-light">
-          🚧 Em breve, mais informações sobre meus projetos. 🚧
-        </p>
-      </motion.div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto px-8">
+        {listaProjetos
+          .slice(0)
+          .reverse()
+          .map((projetos, index) => {
+            return <CardProjeto key={index} index={index} {...projetos} />;
+          })}
+      </div>
     </div>
   );
 };
