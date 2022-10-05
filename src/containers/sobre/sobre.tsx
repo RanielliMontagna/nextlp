@@ -63,6 +63,26 @@ const Sobre = () => {
               que você goste!
             </p>
           </motion.div>
+
+          <motion.div
+            initial={{
+              y: width < 600 ? 30 : 0,
+              x: width < 600 ? 0 : 100,
+              opacity: 0,
+            }}
+            transition={{
+              duration: 1.4,
+            }}
+            whileInView={{ opacity: 1, x: 0, y: 0 }}
+          >
+            <button
+              className="px-6 py-2 border border-gray-500 rounded-full uppercase text-xs 
+                         tracking-widest text-gray-100 transition-all hover:border-accent hover:text-accent"
+              onClick={() => window.open('/cv.pdf', '_blank')}
+            >
+              Acesse meu currículo
+            </button>
+          </motion.div>
         </div>
       </div>
     </div>
