@@ -42,7 +42,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
         <meta name="twitter:image" content="./assets/logo/512.png" />
 
-        <title>Ranielli Portfolio</title>
+        <title>Ranielli Portfólio</title>
       </Head>
       <GlobalStyles />
       <Component {...pageProps} />

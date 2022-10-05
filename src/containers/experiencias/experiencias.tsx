@@ -1,20 +1,18 @@
 import { motion } from 'framer-motion';
 
 import { SectionTitle } from '../../components/sectionTitle/sectionTitle';
+import { CardExperiencia } from './cardExperiencia/cardExperiencia';
+import { listaExperiencias } from './experiencias.static';
 
 const Experiencias = () => {
   return (
-    <div className="pb-16">
+    <div className="pb-16 mx-auto max-w-7xl">
       <SectionTitle title="Experiências" />
 
-      <motion.div
-        initial={{ x: 0, opacity: 0 }}
-        transition={{ duration: 1 }}
-        whileInView={{ opacity: 1, x: 0 }}
-      >
-        <p className="text-2xl text-center mt-4 font-light">
-          🚧 Em breve, mais informações sobre minhas experiências profissionais. 🚧
-        </p>
+      <motion.div className="flex flex-col gap-8 mx-auto items-center p-8">
+        {listaExperiencias?.map((experiencia, index) => {
+          return <CardExperiencia key={index} {...experiencia} />;
+        })}
       </motion.div>
     </div>
   );
