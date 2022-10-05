@@ -32,13 +32,15 @@ const CardExperiencia = ({
         <motion.h3 className="text-lg font-semibold text-center text-gray-300">{periodo}</motion.h3>
       </div>
       <div className="flex flex-col gap-2">
-        {descricao.map((item, index) => {
-          return (
-            <motion.li key={index} className="text-lg text-gray-300">
-              {item}
-            </motion.li>
-          );
-        })}
+        <ul>
+          {descricao.map((item, index) => {
+            return (
+              <motion.li key={index} className="text-lg text-gray-300">
+                {item}
+              </motion.li>
+            );
+          })}
+        </ul>
       </div>
     </motion.div>
   );

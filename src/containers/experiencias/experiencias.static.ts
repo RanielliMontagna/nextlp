@@ -9,7 +9,7 @@ export interface ExperienciasProps {
 
 export const listaExperiencias: ExperienciasProps[] = [
   {
-    logoUrl: '/assets/svgs/empresas/sbsistemas.png',
+    logoUrl: '/assets/svgs/empresas/sbsistemas.svg',
     cargo: 'Desenvolvedor Front-end',
     empresa: 'SBSistemas',
     empresaUrl: 'https://www.sbsistemas.com.br/',
