@@ -41,6 +41,20 @@ export const listaProjetos: IListaProjetos[] = [
     tecnologias: ['React', 'Zustand', 'React Hook Form'],
   },
   {
+    nome: 'DataIntegra - Backend',
+    descricao:
+      'Backend de um projeto de controle de receitas e despesas. Feito com o intuito de ensinar o uso de NodeJS com Prisma e Typescript.',
+    github: 'https://github.com/RanielliMontagna/apiIntegra',
+    tecnologias: ['NodeJS', 'Prisma', 'Jest', 'Swagger'],
+  },
+  {
+    nome: 'DataIntegra - Front',
+    descricao:
+      'Projeto com controle de receitas e despesas. Feito com o intuito de ensinar o básico de React + Typescript.',
+    github: 'https://github.com/RanielliMontagna/webIntegra',
+    tecnologias: ['React', 'MaterialUI', 'Zustand'],
+  },
+  {
     nome: 'NLW eSports',
     descricao:
       'Projeto criado durante a 9º NLW da Rocketseat.  Voltado ao universo de games para conectar pessoas que precisam de um duo para jogar!',
