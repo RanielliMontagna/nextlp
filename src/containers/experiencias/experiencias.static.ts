@@ -13,7 +13,7 @@ export const listaExperiencias: ExperienciasProps[] = [
     cargo: 'Desenvolvedor Front-end',
     empresa: 'SBSistemas',
     empresaUrl: 'https://www.sbsistemas.com.br/',
-    periodo: 'Julho 2021 - Atual',
+    periodo: 'Maio 2021 - Atual',
     descricao: [
       'Escrever código limpo, reutilizável e de fácil manutenção;',
       'Trabalhar com diversas tecnologias, como React, Next.js, TypeScript e Electron',

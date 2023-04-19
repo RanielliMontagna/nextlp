@@ -53,14 +53,17 @@ const Sobre = () => {
             whileInView={{ opacity: 1, x: 0, y: 0 }}
           >
             <p className="text-sm md:text-md lg:text-lg text-justify">
-              sou um desenvolvedor front-end apaixonado por tecnologia e design. Atualmente trabalho
-              como desenvolvedor na <span className="font-semibold">SB Sistemas</span>. Sou formado
-              em Análise e Desenvolvimento de Sistemas pela{' '}
-              <span className="font-semibold">Universidade de Passo Fundo (UPF)</span>. Além disso,
-              sou um entusiasta de tecnologias web e mobile, e estou sempre em busca de novos
-              conhecimentos. Me considero uma pessoa proativa, comunicativa e que gosta de trabalhar
-              em equipe. Criei esse portfólio com o intuito de mostrar um pouco sobre mim. Espero
-              que você goste!
+              Sou um entusiasta do desenvolvimento front-end, com 2 anos de experiência na área.
+              Tenho ampla experiência em criar aplicações web utilizando React e Typescript como
+              principais ferramentas. Tenho paixão por criar interfaces de usuário responsivas,
+              intuitivas e de alta qualidade. Tenho um forte senso de detalhes e uma abordagem
+              orientada a resultados no desenvolvimento de projetos. Tenho habilidades de resolução
+              de problemas e sou proativo em encontrar soluções eficazes para desafios técnicos. Sou
+              comprometido em me manter atualizado com as últimas tendências e melhores práticas do
+              desenvolvimento front-end. Além do meu conhecimento técnico, sou uma pessoa
+              colaborativa, com facilidade em trabalhar em equipe e em comunicação. Tenho a
+              habilidade de entender as necessidades dos usuários finais e de criar experiências de
+              usuário excepcionais, focadas na usabilidade e na estética.
             </p>
           </motion.div>
 
