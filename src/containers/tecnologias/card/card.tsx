@@ -1,11 +1,11 @@
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
 
 interface CardProps {
-  title: string;
-  logoUrl: string;
-  siteUrl: string;
-  duration?: number;
-  y?: number;
+  title: string
+  logoUrl: string
+  siteUrl: string
+  duration?: number
+  y?: number
 }
 
 export function Card({ title, logoUrl, siteUrl, duration = 1, y = 50 }: CardProps) {
@@ -23,5 +23,5 @@ export function Card({ title, logoUrl, siteUrl, duration = 1, y = 50 }: CardProp
         <p className="text-center mt-2">{title}</p>
       </div>
     </motion.div>
-  );
+  )
 }

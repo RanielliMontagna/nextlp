@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion';
-import { ExperienciasProps } from '../experiencias.static';
+import { motion } from 'framer-motion'
+import { ExperienciasProps } from '../experiencias.static'
 
 export function CardExperiencia({
   logoUrl,
@@ -38,10 +38,10 @@ export function CardExperiencia({
               <motion.li key={index} className="text-lg text-gray-300">
                 {item}
               </motion.li>
-            );
+            )
           })}
         </ul>
       </div>
     </motion.div>
-  );
+  )
 }

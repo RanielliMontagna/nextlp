@@ -1,4 +1,4 @@
-import { FaHeart } from 'react-icons/fa';
+import { FaHeart } from 'react-icons/fa'
 
 export function Footer() {
   return (
@@ -9,5 +9,5 @@ export function Footer() {
         </button>
       </div>
     </footer>
-  );
+  )
 }

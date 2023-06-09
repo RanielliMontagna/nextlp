@@ -1,7 +1,7 @@
-import { SectionTitle } from '@/components/sectionTitle/sectionTitle';
+import { SectionTitle } from '@/components/sectionTitle/sectionTitle'
 
-import { listaProjetos } from './projetos.static';
-import { CardProjeto } from './cardProjeto/cardProjeto';
+import { listaProjetos } from './projetos.static'
+import { CardProjeto } from './cardProjeto/cardProjeto'
 
 export function Projetos() {
   return (
@@ -13,9 +13,9 @@ export function Projetos() {
           .slice(0)
           .reverse()
           .map((projetos, index) => {
-            return <CardProjeto key={index} index={index} {...projetos} />;
+            return <CardProjeto key={index} index={index} {...projetos} />
           })}
       </div>
     </div>
-  );
+  )
 }

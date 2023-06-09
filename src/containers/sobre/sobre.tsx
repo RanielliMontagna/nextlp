@@ -1,10 +1,10 @@
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
 
-import { SectionTitle } from '@/components/sectionTitle/sectionTitle';
-import useMediaQuery from '@/hooks/useMediaQuery';
+import { SectionTitle } from '@/components/sectionTitle/sectionTitle'
+import useMediaQuery from '@/hooks/useMediaQuery'
 
 export function Sobre() {
-  const isMobile = useMediaQuery('(max-width: 600px)');
+  const isMobile = useMediaQuery('(max-width: 600px)')
 
   return (
     <div className="pb-16">
@@ -87,5 +87,5 @@ export function Sobre() {
         </div>
       </div>
     </div>
-  );
+  )
 }

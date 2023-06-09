@@ -1,8 +1,8 @@
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
 
-import { SectionTitle } from '@/components/sectionTitle/sectionTitle';
+import { SectionTitle } from '@/components/sectionTitle/sectionTitle'
 
-import { Card } from './card/card';
+import { Card } from './card/card'
 
 export function Tecnologias() {
   return (
@@ -57,5 +57,5 @@ export function Tecnologias() {
         </div>
       </div>
     </div>
-  );
+  )
 }

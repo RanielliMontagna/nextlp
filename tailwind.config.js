@@ -11,7 +11,7 @@ module.exports = {
     },
   },
   plugins: [],
-};
+}
 
 // text: '#dce1e4',
 // background: '#222c3f',

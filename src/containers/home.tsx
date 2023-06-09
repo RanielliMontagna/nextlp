@@ -1,12 +1,12 @@
-import { Footer } from '@/components/footer/footer';
+import { Footer } from '@/components/footer/footer'
 
-import { Contato } from './contato/contato';
-import { Experiencias } from './experiencias/experiencias';
-import { Header } from './header/header';
-import { Hero } from './hero/hero';
-import { Projetos } from './projetos/projetos';
-import { Sobre } from './sobre/sobre';
-import { Tecnologias } from './tecnologias/tecnologias';
+import { Contato } from './contato/contato'
+import { Experiencias } from './experiencias/experiencias'
+import { Header } from './header/header'
+import { Hero } from './hero/hero'
+import { Projetos } from './projetos/projetos'
+import { Sobre } from './sobre/sobre'
+import { Tecnologias } from './tecnologias/tecnologias'
 
 export function Home() {
   return (
@@ -39,5 +39,5 @@ export function Home() {
 
       <Footer />
     </div>
-  );
+  )
 }

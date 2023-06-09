@@ -1,7 +1,7 @@
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
 
 interface SectionTitleProps {
-  title: string;
+  title: string
 }
 
 export function SectionTitle({ title }: SectionTitleProps) {
@@ -19,5 +19,5 @@ export function SectionTitle({ title }: SectionTitleProps) {
     >
       <h3 className="top-24 uppercase tracking-[15px] text-2xl fill-text">{title}</h3>
     </motion.div>
-  );
+  )
 }

@@ -1,9 +1,9 @@
-import { motion } from 'framer-motion';
-import { FaLinkedinIn, FaInstagram, FaTwitter, FaEnvelope } from 'react-icons/fa';
+import { motion } from 'framer-motion'
+import { FaLinkedinIn, FaInstagram, FaTwitter, FaEnvelope } from 'react-icons/fa'
 
-import { email, instagram, linkedin, twitter } from '@/shared/links';
+import { email, instagram, linkedin, twitter } from '@/shared/links'
 
-import { SocialMediaButton } from './socialMediaButton/socialMediaButton';
+import { SocialMediaButton } from './socialMediaButton/socialMediaButton'
 
 export function Header() {
   return (
@@ -53,5 +53,5 @@ export function Header() {
         />
       </motion.div>
     </header>
-  );
+  )
 }

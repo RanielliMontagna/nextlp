@@ -1,22 +1,22 @@
-import Link from 'next/link';
+import Link from 'next/link'
 
-import { IconType } from 'react-icons';
+import { IconType } from 'react-icons'
 
 interface SocialMediaButtonProps {
   /**
    * O ícone do botão de mídia social que será exibido.
    */
-  Icon: IconType;
+  Icon: IconType
 
   /**
    * Link para onde o botão deve levar o usuário
    */
-  link: string;
+  link: string
 
   /**
    * @description Texto alternativo para o botão de mídia social (ex: "Linkedin")
    */
-  alt?: string;
+  alt?: string
 }
 
 export function SocialMediaButton({ Icon, link, alt }: SocialMediaButtonProps) {
@@ -27,5 +27,5 @@ export function SocialMediaButton({ Icon, link, alt }: SocialMediaButtonProps) {
       hover:-translate-y-1 hover:scale-110 transform duration-300 ease-in-out"
       />
     </Link>
-  );
+  )
 }

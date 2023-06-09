@@ -1,5 +1,5 @@
-import { Global, css } from '@emotion/react';
-import { theme } from './theme';
+import { Global, css } from '@emotion/react'
+import { theme } from './theme'
 
 export function GlobalStyles() {
   return (
@@ -35,5 +35,5 @@ export function GlobalStyles() {
         }
       `}
     />
-  );
+  )
 }
