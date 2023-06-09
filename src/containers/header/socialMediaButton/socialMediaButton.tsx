@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import { IconType } from 'react-icons';
 
 interface SocialMediaButtonProps {
@@ -19,11 +21,11 @@ interface SocialMediaButtonProps {
 
 export function SocialMediaButton({ Icon, link, alt }: SocialMediaButtonProps) {
   return (
-    <button onClick={() => window.open(link)} aria-label={alt}>
+    <Link href={link} target="_blank" rel="noopener noreferrer">
       <Icon
         className="w-6 h-6 fill-zinc-500 hover:fill-accent transition-all first-letter:
       hover:-translate-y-1 hover:scale-110 transform duration-300 ease-in-out"
       />
-    </button>
+    </Link>
   );
 }

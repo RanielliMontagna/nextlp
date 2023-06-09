@@ -3,7 +3,7 @@ import { Hero } from '../containers/hero/hero';
 import { Sobre } from '../containers/sobre/sobre';
 import { Contato } from './contato/contato';
 import { Experiencias } from './experiencias/experiencias';
-import { Footer } from './footer/Footer';
+import { Footer } from './footer/footer';
 import { Projetos } from './projetos/projetos';
 import { Tecnologias } from './tecnologias/tecnologias';
 
