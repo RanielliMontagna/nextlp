@@ -1,10 +1,10 @@
 export interface ExperienciasProps {
-  logoUrl: string;
-  cargo: string;
-  empresa: string;
-  empresaUrl: string;
-  periodo: string;
-  descricao: string[];
+  logoUrl: string
+  cargo: string
+  empresa: string
+  empresaUrl: string
+  periodo: string
+  descricao: string[]
 }
 
 export const listaExperiencias: ExperienciasProps[] = [
@@ -15,10 +15,7 @@ export const listaExperiencias: ExperienciasProps[] = [
     empresaUrl: 'https://www.sbsistemas.com.br/',
     periodo: 'Maio 2021 - Atual',
     descricao: [
-      'Escrever código limpo, reutilizável e de fácil manutenção;',
-      'Trabalhar com diversas tecnologias, como React, Next.js, TypeScript e Electron',
-      'Colaborar entre equipes de desenvolvimento e design para criar soluções inovadoras.',
-      'Criar e manter um design system de qualidade para garantir a consistência de toda a UI.',
+      'Como Tech Lead e Desenvolvedor Front-end, lidero uma equipe, garanto a qualidade do código e otimizo a usabilidade das aplicações. Utilizo React, TypeScript, JavaScript e outras ferramentas, seguindo metodologias ágeis e práticas de CI/CD. Meu objetivo é liderar a equipe, entregar projetos consistentes e impulsionar o crescimento da empresa.',
     ],
   },
-];
+]

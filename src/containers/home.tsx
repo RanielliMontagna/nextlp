@@ -1,13 +1,14 @@
-import { Header } from '../containers/header/header';
-import { Hero } from '../containers/hero/hero';
-import { Sobre } from '../containers/sobre/sobre';
-import { Contato } from './contato/contato';
-import { Experiencias } from './experiencias/experiencias';
-import { Footer } from './footer/Footer';
-import { Projetos } from './projetos/projetos';
-import { Tecnologias } from './tecnologias/tecnologias';
+import { Footer } from '@/components/footer/footer'
 
-const Home = () => {
+import { Contato } from './contato/contato'
+import { Experiencias } from './experiencias/experiencias'
+import { Header } from './header/header'
+import { Hero } from './hero/hero'
+import { Projetos } from './projetos/projetos'
+import { Sobre } from './sobre/sobre'
+import { Tecnologias } from './tecnologias/tecnologias'
+
+export function Home() {
   return (
     <div className="snap-y snap-mandatory">
       <Header />
@@ -36,11 +37,7 @@ const Home = () => {
         <Contato />
       </section>
 
-      <footer>
-        <Footer />
-      </footer>
+      <Footer />
     </div>
-  );
-};
-
-export { Home };
+  )
+}

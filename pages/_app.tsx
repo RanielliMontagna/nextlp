@@ -1,8 +1,8 @@
-import App, { AppContext, AppProps } from 'next/app';
-import Head from 'next/head';
+import { AppProps } from 'next/app'
+import Head from 'next/head'
 
-import { GlobalStyles } from '../src/styles/globals.styles';
-import 'tailwindcss/tailwind.css';
+import { GlobalStyles } from '../src/styles/globals.styles'
+import 'tailwindcss/tailwind.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -57,7 +57,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <GlobalStyles />
       <Component {...pageProps} />
     </>
-  );
+  )
 }
 
-export default MyApp;
+export default MyApp

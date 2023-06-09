@@ -1,8 +1,8 @@
 export interface IListaProjetos {
-  nome: string;
-  descricao: string;
-  github: string;
-  tecnologias: string[];
+  nome: string
+  descricao: string
+  github: string
+  tecnologias: string[]
 }
 
 export const listaProjetos: IListaProjetos[] = [
@@ -74,4 +74,4 @@ export const listaProjetos: IListaProjetos[] = [
     github: 'https://github.com/RanielliMontagna/app-quarto-digital',
     tecnologias: ['React', 'Redux', 'Typescript', 'Context'],
   },
-];
+]

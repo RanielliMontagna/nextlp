@@ -1,15 +1,15 @@
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
 
-import { BsFolder } from 'react-icons/bs';
-import { FiGithub } from 'react-icons/fi';
+import { BsFolder } from 'react-icons/bs'
+import { FiGithub } from 'react-icons/fi'
 
-import { IListaProjetos } from '../projetos.static';
+import { IListaProjetos } from '../projetos.static'
 
 interface ICardProjeto extends IListaProjetos {
-  index: number;
+  index: number
 }
 
-const CardProjeto = ({ nome, descricao, github, tecnologias, index }: ICardProjeto) => {
+export function CardProjeto({ nome, descricao, github, tecnologias, index }: ICardProjeto) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 + index * 10 }}
@@ -49,13 +49,11 @@ const CardProjeto = ({ nome, descricao, github, tecnologias, index }: ICardProje
                 >
                   {tecnologia}
                 </div>
-              );
+              )
             })}
           </div>
         </div>
       </motion.div>
     </motion.div>
-  );
-};
-
-export { CardProjeto };
+  )
+}

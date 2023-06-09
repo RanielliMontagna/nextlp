@@ -1,15 +1,16 @@
-import { useTypewriter, Cursor } from 'react-simple-typewriter';
-import { motion } from 'framer-motion';
+import Link from 'next/link'
 
-import Link from 'next/link';
-import { theme } from '../../styles/theme';
+import { useTypewriter, Cursor } from 'react-simple-typewriter'
+import { motion } from 'framer-motion'
 
-const Hero = () => {
+import { theme } from '@/styles/theme'
+
+export function Hero() {
   const [text] = useTypewriter({
     words: ['Olá, meu nome é', 'Ranielli Montagna', 'Bem-vindo ao meu portfólio!'],
     loop: true,
     delaySpeed: 1000,
-  });
+  })
 
   const links = [
     {
@@ -28,7 +29,7 @@ const Hero = () => {
       text: 'Projetos',
       href: '#projetos',
     },
-  ];
+  ]
 
   return (
     <motion.div
@@ -84,7 +85,5 @@ const Hero = () => {
         ))}
       </div>
     </motion.div>
-  );
-};
-
-export { Hero };
+  )
+}

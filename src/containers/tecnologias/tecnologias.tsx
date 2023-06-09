@@ -1,9 +1,10 @@
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
 
-import { SectionTitle } from '../../components/sectionTitle/sectionTitle';
-import { Card } from './card/card';
+import { SectionTitle } from '@/components/sectionTitle/sectionTitle'
 
-const Tecnologias = () => {
+import { Card } from './card/card'
+
+export function Tecnologias() {
   return (
     <div className="pb-16">
       <SectionTitle title="Tecnologias" />
@@ -15,9 +16,9 @@ const Tecnologias = () => {
           whileInView={{ opacity: 1, y: 0 }}
           className="text-center"
         >
-          As tecnologias que eu mais uso estão voltadas para o desenvolvimento web, mas também tenho
-          experiência com desenvolvimento mobile e desktop. Abaixo estão algumas das tecnologias que
-          eu mais uso.
+          Tenho expertise no desenvolvimento web, além de experiência em desenvolvimento mobile e
+          desktop. Abaixo, listo algumas das principais tecnologias com as quais trabalho de forma
+          proficientes.
         </motion.p>
 
         <div className="flex flex-col md:flex-row justify-center items-center mt-8">
@@ -56,7 +57,5 @@ const Tecnologias = () => {
         </div>
       </div>
     </div>
-  );
-};
-
-export { Tecnologias };
+  )
+}

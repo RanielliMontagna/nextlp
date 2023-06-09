@@ -4,4 +4,4 @@ export const theme = {
     background: '#242630',
     accent: '#05EDAB',
   },
-};
+}

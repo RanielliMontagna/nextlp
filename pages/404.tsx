@@ -1,5 +1,4 @@
-import Link from 'next/link';
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
 
 const NotFound = () => {
   return (
@@ -44,7 +43,7 @@ const NotFound = () => {
         </button>
       </motion.div>
     </div>
-  );
-};
+  )
+}
 
-export default NotFound;
+export default NotFound
