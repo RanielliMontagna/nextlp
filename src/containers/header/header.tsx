@@ -24,10 +24,10 @@ export function Header() {
         }}
         className="flex gap-4 flex-1 justify-center md:flex-initial md:justify-start"
       >
-        <SocialMediaButton link={linkedin} Icon={FaLinkedinIn} alt="Linkedin" />
-        <SocialMediaButton link={instagram} Icon={FaInstagram} alt="Instagram" />
-        <SocialMediaButton link={twitter} Icon={FaTwitter} alt="Twitter" />
-        <SocialMediaButton link={email} Icon={FaEnvelope} alt="Email" />
+        <SocialMediaButton link={linkedin} Icon={FaLinkedinIn} />
+        <SocialMediaButton link={instagram} Icon={FaInstagram} />
+        <SocialMediaButton link={twitter} Icon={FaTwitter} />
+        <SocialMediaButton link={email} Icon={FaEnvelope} />
       </motion.div>
       <motion.div
         initial={{

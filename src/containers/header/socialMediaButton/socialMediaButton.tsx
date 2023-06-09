@@ -12,14 +12,9 @@ interface SocialMediaButtonProps {
    * Link para onde o botão deve levar o usuário
    */
   link: string
-
-  /**
-   * @description Texto alternativo para o botão de mídia social (ex: "Linkedin")
-   */
-  alt?: string
 }
 
-export function SocialMediaButton({ Icon, link, alt }: SocialMediaButtonProps) {
+export function SocialMediaButton({ Icon, link }: SocialMediaButtonProps) {
   return (
     <Link href={link} target="_blank" rel="noopener noreferrer">
       <Icon
