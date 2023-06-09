@@ -2,7 +2,7 @@ import { SectionTitle } from '../../components/sectionTitle/sectionTitle';
 import { listaProjetos } from './projetos.static';
 import { CardProjeto } from './cardProjeto/cardProjeto';
 
-const Projetos = () => {
+export function Projetos() {
   return (
     <div className="pb-16">
       <SectionTitle title="Projetos" />
@@ -17,6 +17,4 @@ const Projetos = () => {
       </div>
     </div>
   );
-};
-
-export { Projetos };
+}

@@ -7,7 +7,7 @@ import { Footer } from './footer/Footer';
 import { Projetos } from './projetos/projetos';
 import { Tecnologias } from './tecnologias/tecnologias';
 
-const Home = () => {
+export function Home() {
   return (
     <div className="snap-y snap-mandatory">
       <Header />
@@ -41,6 +41,4 @@ const Home = () => {
       </footer>
     </div>
   );
-};
-
-export { Home };
+}

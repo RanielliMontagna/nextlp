@@ -9,7 +9,7 @@ interface ICardProjeto extends IListaProjetos {
   index: number;
 }
 
-const CardProjeto = ({ nome, descricao, github, tecnologias, index }: ICardProjeto) => {
+export function CardProjeto({ nome, descricao, github, tecnologias, index }: ICardProjeto) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 + index * 10 }}
@@ -56,6 +56,4 @@ const CardProjeto = ({ nome, descricao, github, tecnologias, index }: ICardProje
       </motion.div>
     </motion.div>
   );
-};
-
-export { CardProjeto };
+}

@@ -17,7 +17,7 @@ interface SocialMediaButtonProps {
   alt?: string;
 }
 
-const SocialMediaButton = ({ Icon, link, alt }: SocialMediaButtonProps) => {
+export function SocialMediaButton({ Icon, link, alt }: SocialMediaButtonProps) {
   return (
     <button onClick={() => window.open(link)} aria-label={alt}>
       <Icon
@@ -26,6 +26,4 @@ const SocialMediaButton = ({ Icon, link, alt }: SocialMediaButtonProps) => {
       />
     </button>
   );
-};
-
-export { SocialMediaButton };
+}

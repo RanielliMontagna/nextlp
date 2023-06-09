@@ -1,8 +1,9 @@
 import { motion } from 'framer-motion';
+
 import { SectionTitle } from '../../components/sectionTitle/sectionTitle';
 import { email } from '../../shared/links';
 
-const Contato = () => {
+export function Contato() {
   return (
     <div className="py-16 max-w-7xl flex flex-col items-center text-center mx-auto p-8">
       <SectionTitle title="Contato" />
@@ -32,6 +33,4 @@ const Contato = () => {
       </motion.div>
     </div>
   );
-};
-
-export { Contato };
+}

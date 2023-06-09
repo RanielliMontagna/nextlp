@@ -1,14 +1,14 @@
 import { motion } from 'framer-motion';
 import { ExperienciasProps } from '../experiencias.static';
 
-const CardExperiencia = ({
+export function CardExperiencia({
   logoUrl,
   cargo,
   empresa,
   empresaUrl,
   periodo,
   descricao,
-}: ExperienciasProps) => {
+}: ExperienciasProps) {
   return (
     <motion.div
       initial={{ y: 100, opacity: 0 }}
@@ -44,6 +44,4 @@ const CardExperiencia = ({
       </div>
     </motion.div>
   );
-};
-
-export { CardExperiencia };
+}

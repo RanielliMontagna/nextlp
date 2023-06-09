@@ -1,10 +1,11 @@
+import Link from 'next/link';
+
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import { motion } from 'framer-motion';
 
-import Link from 'next/link';
 import { theme } from '../../styles/theme';
 
-const Hero = () => {
+export function Hero() {
   const [text] = useTypewriter({
     words: ['Olá, meu nome é', 'Ranielli Montagna', 'Bem-vindo ao meu portfólio!'],
     loop: true,
@@ -85,6 +86,4 @@ const Hero = () => {
       </div>
     </motion.div>
   );
-};
-
-export { Hero };
+}

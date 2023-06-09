@@ -4,7 +4,7 @@ import { FaLinkedinIn, FaInstagram, FaTwitter, FaEnvelope } from 'react-icons/fa
 import { email, instagram, linkedin, twitter } from '../../shared/links';
 import { SocialMediaButton } from './socialMediaButton/socialMediaButton';
 
-const Header = () => {
+export function Header() {
   return (
     <header className="sticky top-0 flex justify-between max-w-7xl mx-auto z-10 p-4">
       <motion.div
@@ -53,6 +53,4 @@ const Header = () => {
       </motion.div>
     </header>
   );
-};
-
-export { Header };
+}

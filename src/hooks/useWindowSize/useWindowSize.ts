@@ -1,7 +1,7 @@
 import React from 'react';
 import { UseWindowSizeHookResult, UseWindowSizeProps } from './useWindowSize.types';
 
-const useWindowSize = ({ defaultValue }: UseWindowSizeProps = {}) => {
+export default function useWindowSize({ defaultValue }: UseWindowSizeProps = {}) {
   const isClient = typeof window !== 'undefined';
 
   const _getSize = React.useCallback(() => {
@@ -38,6 +38,4 @@ const useWindowSize = ({ defaultValue }: UseWindowSizeProps = {}) => {
   }, [_handleResize, isClient]);
 
   return _windowSize;
-};
-
-export default useWindowSize;
+}

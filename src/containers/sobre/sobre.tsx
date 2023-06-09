@@ -1,8 +1,9 @@
 import { motion } from 'framer-motion';
-import { SectionTitle } from '../../components/sectionTitle/sectionTitle';
-import useWindowSize from '../../hooks/useWindowSize/useWindowSize';
 
-const Sobre = () => {
+import useWindowSize from '../../hooks/useWindowSize/useWindowSize';
+import { SectionTitle } from '../../components/sectionTitle/sectionTitle';
+
+export function Sobre() {
   const { width } = useWindowSize();
 
   return (
@@ -87,6 +88,4 @@ const Sobre = () => {
       </div>
     </div>
   );
-};
-
-export { Sobre };
+}

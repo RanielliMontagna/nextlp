@@ -1,4 +1,4 @@
-const Footer = () => {
+export function Footer() {
   return (
     <div className="text-center p-4 text-white">
       <button onClick={() => window.open('https://github.com/RanielliMontagna/nextlp', '_blank')}>
@@ -6,6 +6,4 @@ const Footer = () => {
       </button>
     </div>
   );
-};
-
-export { Footer };
+}

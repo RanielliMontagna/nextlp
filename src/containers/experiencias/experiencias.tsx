@@ -4,7 +4,7 @@ import { SectionTitle } from '../../components/sectionTitle/sectionTitle';
 import { CardExperiencia } from './cardExperiencia/cardExperiencia';
 import { listaExperiencias } from './experiencias.static';
 
-const Experiencias = () => {
+export function Experiencias() {
   return (
     <div className="pb-16 mx-auto max-w-7xl">
       <SectionTitle title="Experiências" />
@@ -16,6 +16,4 @@ const Experiencias = () => {
       </motion.div>
     </div>
   );
-};
-
-export { Experiencias };
+}

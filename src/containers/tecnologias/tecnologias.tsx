@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { SectionTitle } from '../../components/sectionTitle/sectionTitle';
 import { Card } from './card/card';
 
-const Tecnologias = () => {
+export function Tecnologias() {
   return (
     <div className="pb-16">
       <SectionTitle title="Tecnologias" />
@@ -57,6 +57,4 @@ const Tecnologias = () => {
       </div>
     </div>
   );
-};
-
-export { Tecnologias };
+}
