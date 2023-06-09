@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 
-import { SectionTitle } from '../../components/sectionTitle/sectionTitle';
-import { email } from '../../shared/links';
+import { SectionTitle } from '@/components/sectionTitle/sectionTitle';
+import { email } from '@/shared/links';
 
 export function Contato() {
   return (

@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 
-import { SectionTitle } from '../../components/sectionTitle/sectionTitle';
+import { SectionTitle } from '@/components/sectionTitle/sectionTitle';
+
 import { CardExperiencia } from './cardExperiencia/cardExperiencia';
 import { listaExperiencias } from './experiencias.static';
 

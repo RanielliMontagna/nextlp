@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 
-import { SectionTitle } from '../../components/sectionTitle/sectionTitle';
-import useMediaQuery from '../../hooks/useMediaQuery';
+import { SectionTitle } from '@/components/sectionTitle/sectionTitle';
+import useMediaQuery from '@/hooks/useMediaQuery';
 
 export function Sobre() {
   const isMobile = useMediaQuery('(max-width: 600px)');

@@ -1,4 +1,5 @@
-import { SectionTitle } from '../../components/sectionTitle/sectionTitle';
+import { SectionTitle } from '@/components/sectionTitle/sectionTitle';
+
 import { listaProjetos } from './projetos.static';
 import { CardProjeto } from './cardProjeto/cardProjeto';
 

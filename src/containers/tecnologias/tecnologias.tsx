@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 
-import { SectionTitle } from '../../components/sectionTitle/sectionTitle';
+import { SectionTitle } from '@/components/sectionTitle/sectionTitle';
+
 import { Card } from './card/card';
 
 export function Tecnologias() {

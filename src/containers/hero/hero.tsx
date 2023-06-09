@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import { motion } from 'framer-motion';
 
-import { theme } from '../../styles/theme';
+import { theme } from '@/styles/theme';
 
 export function Hero() {
   const [text] = useTypewriter({

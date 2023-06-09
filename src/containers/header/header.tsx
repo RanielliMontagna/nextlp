@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
 import { FaLinkedinIn, FaInstagram, FaTwitter, FaEnvelope } from 'react-icons/fa';
 
-import { email, instagram, linkedin, twitter } from '../../shared/links';
+import { email, instagram, linkedin, twitter } from '@/shared/links';
+
 import { SocialMediaButton } from './socialMediaButton/socialMediaButton';
 
 export function Header() {
