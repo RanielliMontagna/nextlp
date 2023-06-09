@@ -1,9 +1,11 @@
+import { FaHeart } from 'react-icons/fa';
+
 export function Footer() {
   return (
     <footer>
       <div className="text-center p-4 text-white">
         <button onClick={() => window.open('https://github.com/RanielliMontagna/nextlp', '_blank')}>
-          Projetado e desenvolvido por <span className="font-semibold">Ranielli Montagna</span>
+          Feito com <FaHeart className="inline-block text-red-500" /> por <b>Ranielli Montagna</b>
         </button>
       </div>
     </footer>

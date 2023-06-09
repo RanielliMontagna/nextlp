@@ -9,7 +9,7 @@ export function Experiencias() {
     <div className="pb-16 mx-auto max-w-7xl">
       <SectionTitle title="Experiências" />
 
-      <motion.div className="flex flex-col gap-8 mx-auto items-center p-8">
+      <motion.div className="flex flex-col gap-8 mx-auto items-center p-8 text-justify">
         {listaExperiencias?.map((experiencia, index) => {
           return <CardExperiencia key={index} {...experiencia} />;
         })}
