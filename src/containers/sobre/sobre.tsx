@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
 
-import useWindowSize from '../../hooks/useWindowSize/useWindowSize';
 import { SectionTitle } from '../../components/sectionTitle/sectionTitle';
+import useMediaQuery from '../../hooks/useMediaQuery';
 
 export function Sobre() {
-  const { width } = useWindowSize();
+  const isMobile = useMediaQuery('(max-width: 600px)');
 
   return (
     <div className="pb-16">
@@ -30,8 +30,8 @@ export function Sobre() {
         <div className="space-y-10 px-0 md:px-10">
           <motion.h4
             initial={{
-              y: width < 600 ? 30 : 0,
-              x: width < 600 ? 0 : 200,
+              y: isMobile ? 30 : 0,
+              x: isMobile ? 0 : 200,
               opacity: 0,
             }}
             transition={{
@@ -44,8 +44,8 @@ export function Sobre() {
           </motion.h4>
           <motion.div
             initial={{
-              y: width < 600 ? 30 : 0,
-              x: width < 600 ? 0 : 100,
+              y: isMobile ? 30 : 0,
+              x: isMobile ? 0 : 100,
               opacity: 0,
             }}
             transition={{
@@ -67,8 +67,8 @@ export function Sobre() {
 
           <motion.div
             initial={{
-              y: width < 600 ? 30 : 0,
-              x: width < 600 ? 0 : 100,
+              y: isMobile ? 30 : 0,
+              x: isMobile ? 0 : 100,
               opacity: 0,
             }}
             transition={{
