@@ -2,13 +2,15 @@ import { motion } from 'framer-motion'
 
 import { SectionTitle } from '@/components/sectionTitle/sectionTitle'
 import useMediaQuery from '@/hooks/useMediaQuery'
+import { useTranslation } from 'react-i18next'
 
 export function Sobre() {
+  const { t: translate } = useTranslation()
   const isMobile = useMediaQuery('(max-width: 600px)')
 
   return (
     <div className="pb-16">
-      <SectionTitle title="Sobre" />
+      <SectionTitle title={translate('about:sectionTitle')} />
 
       <div
         className="flex flex-col relative text-center items-center
