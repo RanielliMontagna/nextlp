@@ -34,7 +34,6 @@ function MyApp({ Component, pageProps }: AppProps) {
           property="og:description"
           content="Ranielli Montagna é um desenvolvedor de software apaixonado por tecnologia e inovação. Ele é um entusiasta de tecnologias web e mobile, e está sempre em busca de novos desafios."
         />
-        <meta property="fb:app_id" content="3803398276428135" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary" />

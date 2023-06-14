@@ -1,10 +1,11 @@
+import { memo } from 'react'
 import { motion } from 'framer-motion'
 
 interface SectionTitleProps {
   title: string
 }
 
-export function SectionTitle({ title }: SectionTitleProps) {
+function SectionTitle({ title }: SectionTitleProps) {
   return (
     <motion.div
       initial={{
@@ -21,3 +22,5 @@ export function SectionTitle({ title }: SectionTitleProps) {
     </motion.div>
   )
 }
+
+export default memo(SectionTitle)

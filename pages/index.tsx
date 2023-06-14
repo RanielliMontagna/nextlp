@@ -3,12 +3,14 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 import { Home as HomeContainer } from '../src/containers/home'
 
-const Home: NextPage = () => <HomeContainer />
+const Home: NextPage = HomeContainer
 
 export async function getStaticProps({ locale }: GetStaticProps & { locale: string }) {
+  const translations = await serverSideTranslations(locale, ['common', 'about', 'contact'])
+
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['common', 'about'])),
+      ...translations,
     },
   }
 }

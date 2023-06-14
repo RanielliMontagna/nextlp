@@ -1,7 +1,7 @@
 import { useTranslation } from 'next-i18next'
 import { motion } from 'framer-motion'
 
-import { SectionTitle } from '@/components/sectionTitle/sectionTitle'
+import SectionTitle from '@/components/sectionTitle/sectionTitle'
 import useMediaQuery from '@/hooks/useMediaQuery'
 
 export function About() {
