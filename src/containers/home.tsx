@@ -5,7 +5,7 @@ import { Experiencias } from './experiencias/experiencias'
 import { Header } from './header/header'
 import { Hero } from './hero/hero'
 import { Projetos } from './projetos/projetos'
-import { Sobre } from './sobre/sobre'
+import { About } from './about/about'
 import { Tecnologias } from './tecnologias/tecnologias'
 
 export function Home() {
@@ -18,7 +18,7 @@ export function Home() {
       </section>
 
       <section id="sobre">
-        <Sobre />
+        <About />
       </section>
 
       <section id="tecnologias">
