@@ -1,10 +1,10 @@
 import { Footer } from '@/components/footer/footer'
 
-import { Contato } from './contato/contato'
 import { Experiencias } from './experiencias/experiencias'
 import { Header } from './header/header'
 import { Hero } from './hero/hero'
 import { Projetos } from './projetos/projetos'
+import { Contact } from './contact/contact'
 import { About } from './about/about'
 import { Tecnologias } from './tecnologias/tecnologias'
 
@@ -34,7 +34,7 @@ export function Home() {
       </section>
 
       <section id="contato">
-        <Contato />
+        <Contact />
       </section>
 
       <Footer />
