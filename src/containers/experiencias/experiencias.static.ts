@@ -1,15 +1,17 @@
 export interface ExperienciasProps {
-  logoUrl: string
+  logo: ImageProps
   cargo: string
   empresa: string
   empresaUrl: string
   periodo: string
   descricao: string[]
 }
+import logosb from '@/assets/svgs/empresas/sbsistemas.svg'
+import { ImageProps } from 'next/image'
 
 export const listaExperiencias: ExperienciasProps[] = [
   {
-    logoUrl: '/assets/svgs/empresas/sbsistemas.svg',
+    logo: logosb,
     cargo: 'Desenvolvedor Front-end',
     empresa: 'SBSistemas',
     empresaUrl: 'https://www.sbsistemas.com.br/',

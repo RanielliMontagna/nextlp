@@ -1,14 +1,15 @@
+import Image, { ImageProps } from 'next/image'
 import { motion } from 'framer-motion'
 
 interface CardProps {
   title: string
-  logoUrl: string
+  logo: ImageProps
   siteUrl: string
   duration?: number
   y?: number
 }
 
-export function Card({ title, logoUrl, siteUrl, duration = 1, y = 50 }: CardProps) {
+export function Card({ title, logo, siteUrl, duration = 1, y = 50 }: CardProps) {
   return (
     <motion.div
       initial={{ y, opacity: 0 }}
@@ -19,7 +20,7 @@ export function Card({ title, logoUrl, siteUrl, duration = 1, y = 50 }: CardProp
         className="flex flex-col items-center mt-4 md:mt-0 md:ml-4 hover:scale-110 transform transition duration-300 cursor-pointer w-20"
         onClick={() => window.open(siteUrl, '_blank')}
       >
-        <img src={logoUrl} alt={title} className="w-16 h-16" />
+        <Image {...logo} alt={title} className="w-16 h-16" />
         <p className="text-center mt-2">{title}</p>
       </div>
     </motion.div>

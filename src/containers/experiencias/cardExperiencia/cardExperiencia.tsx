@@ -1,8 +1,10 @@
+import Image from 'next/image'
 import { motion } from 'framer-motion'
+
 import { ExperienciasProps } from '../experiencias.static'
 
 export function CardExperiencia({
-  logoUrl,
+  logo,
   cargo,
   empresa,
   empresaUrl,
@@ -17,7 +19,7 @@ export function CardExperiencia({
       className="bg-[#272a30] rounded-lg shadow-lg p-12 flex flex-col gap-4  max-w-4xl"
     >
       <div className="flex justify-center">
-        <img src={logoUrl} alt={`${empresa}-logo`} className="w-32 h-32" />
+        <Image {...logo} alt={`${empresa}-logo`} className="w-32 h-32" />
       </div>
       <div>
         <motion.h2 className="text-2xl font-semibold text-center text-white">

@@ -5,6 +5,8 @@ import { Cursor } from 'react-simple-typewriter'
 import { motion } from 'framer-motion'
 
 import { theme } from '@/styles/theme'
+import perfilFoto from '@/assets/svgs/foto.svg'
+
 import { TypeWriter } from './typewriter'
 
 export function Hero() {
@@ -38,9 +40,9 @@ export function Hero() {
       className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden"
     >
       <img
-        className="w-32 h-32 rounded-full relative mx-auto object-cover"
-        src="/assets/svgs/foto.svg"
+        {...perfilFoto}
         alt="Foto de perfil"
+        className="w-32 h-32 rounded-full relative mx-auto object-cover"
       />
       <div>
         <h2 className="text-sm uppercase text-gray-300 pb-2 tracking-[5px]">

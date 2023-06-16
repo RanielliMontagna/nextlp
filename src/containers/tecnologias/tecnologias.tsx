@@ -4,6 +4,11 @@ import SectionTitle from '@/components/sectionTitle/sectionTitle'
 
 import { Card } from './card/card'
 
+import reactLogo from '@/assets/svgs/tecnologias/react.svg'
+import typescriptLogo from '@/assets/svgs/tecnologias/typescript.svg'
+import javascriptLogo from '@/assets/svgs/tecnologias/javascript.svg'
+import nodeLogo from '@/assets/svgs/tecnologias/node.svg'
+
 export function Tecnologias() {
   return (
     <div className="pb-16">
@@ -25,14 +30,14 @@ export function Tecnologias() {
           <div className="flex flex-row justify-center items-center gap-2">
             <Card
               title="React"
-              logoUrl="/assets/svgs/tecnologias/react.svg"
+              logo={reactLogo}
               siteUrl="https://reactjs.org/"
               duration={1.2}
               y={50}
             />
             <Card
               title="Typescript"
-              logoUrl="/assets/svgs/tecnologias/typescript.svg"
+              logo={typescriptLogo}
               siteUrl="https://www.typescriptlang.org/"
               duration={1.4}
               y={55}
@@ -41,14 +46,14 @@ export function Tecnologias() {
           <div className="flex flex-row justify-center items-center gap-2">
             <Card
               title="Javascript"
-              logoUrl="/assets/svgs/tecnologias/javascript.svg"
+              logo={javascriptLogo}
               siteUrl="https://www.javascript.com/"
               duration={1.6}
               y={60}
             />
             <Card
               title="Node"
-              logoUrl="/assets/svgs/tecnologias/node.svg"
+              logo={nodeLogo}
               siteUrl="https://nodejs.org/en/"
               duration={1.8}
               y={65}
