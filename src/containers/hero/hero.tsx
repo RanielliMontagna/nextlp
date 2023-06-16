@@ -1,49 +1,40 @@
+import { useTranslation } from 'next-i18next'
 import Link from 'next/link'
 
-import { useTypewriter, Cursor } from 'react-simple-typewriter'
+import { Cursor } from 'react-simple-typewriter'
 import { motion } from 'framer-motion'
 
 import { theme } from '@/styles/theme'
+import { TypeWriter } from './typewriter'
 
 export function Hero() {
-  const [text] = useTypewriter({
-    words: ['Olá, meu nome é', 'Ranielli Montagna', 'Bem-vindo ao meu portfólio!'],
-    loop: true,
-    delaySpeed: 1000,
-  })
+  const { t: translate } = useTranslation('hero')
+  const words = translate('words', { returnObjects: true }) as string[]
 
   const links = [
     {
-      text: 'Sobre',
+      text: translate('buttons.about'),
       href: '#sobre',
     },
     {
-      text: 'Experiências',
+      text: translate('buttons.experiences'),
       href: '#experiencias',
     },
     {
-      text: 'Tecnologias',
+      text: translate('buttons.technologies'),
       href: '#tecnologias',
     },
     {
-      text: 'Projetos',
+      text: translate('buttons.projects'),
       href: '#projetos',
     },
   ]
 
   return (
     <motion.div
-      initial={{
-        opacity: 0,
-        scale: 0.5,
-      }}
-      animate={{
-        opacity: 1,
-        scale: 1,
-      }}
-      transition={{
-        delay: 0.5,
-      }}
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ delay: 0.5 }}
       className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden"
     >
       <img
@@ -53,10 +44,10 @@ export function Hero() {
       />
       <div>
         <h2 className="text-sm uppercase text-gray-300 pb-2 tracking-[5px]">
-          Desenvolvedor Front-end
+          {translate('career')}
         </h2>
         <h1 className="text-2xl lg:text-5xl font-semibold px-10">
-          <span>{text}</span>
+          <TypeWriter words={words} />
           <Cursor cursorColor={theme.colors.accent} />
         </h1>
       </div>

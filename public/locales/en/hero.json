@@ -1,0 +1,10 @@
+{
+  "words": ["Hello, my name is", "Ranielli Montagna", "Welcome to my portfolio!"],
+  "career": "Front-end Developer",
+  "buttons": {
+    "about": "About",
+    "experiences": "Experiences",
+    "technologies": "Technologies",
+    "projects": "Projects"
+  }
+}
