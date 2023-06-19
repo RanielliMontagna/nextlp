@@ -1,3 +1,4 @@
+import { useTranslation } from 'next-i18next'
 import { motion } from 'framer-motion'
 
 import SectionTitle from '@/components/sectionTitle/sectionTitle'
@@ -9,10 +10,12 @@ import typescriptLogo from '@/assets/svgs/tecnologias/typescript.svg'
 import javascriptLogo from '@/assets/svgs/tecnologias/javascript.svg'
 import nodeLogo from '@/assets/svgs/tecnologias/node.svg'
 
-export function Tecnologias() {
+export function Technologies() {
+  const { t: translate } = useTranslation('technologies')
+
   return (
     <div className="pb-16">
-      <SectionTitle title="Tecnologias" />
+      <SectionTitle title={translate('sectionTitle')} />
 
       <div className="flex flex-col justify-evenly items-center max-w-7xl px-10 mx-auto">
         <motion.p
@@ -21,9 +24,7 @@ export function Tecnologias() {
           whileInView={{ opacity: 1, y: 0 }}
           className="text-center"
         >
-          Tenho expertise no desenvolvimento web, além de experiência em desenvolvimento mobile e
-          desktop. Abaixo, listo algumas das principais tecnologias com as quais trabalho de forma
-          proficientes.
+          {translate('description')}
         </motion.p>
 
         <div className="flex flex-col md:flex-row justify-center items-center mt-8">

@@ -6,7 +6,13 @@ import { Home as HomeContainer } from '../src/containers/home'
 const Home: NextPage = HomeContainer
 
 export async function getStaticProps({ locale }: GetStaticProps & { locale: string }) {
-  const translations = await serverSideTranslations(locale, ['common', 'about', 'contact', 'hero'])
+  const translations = await serverSideTranslations(locale, [
+    'common',
+    'about',
+    'contact',
+    'hero',
+    'technologies',
+  ])
 
   return {
     props: {

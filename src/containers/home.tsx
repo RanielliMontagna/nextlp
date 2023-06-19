@@ -6,7 +6,7 @@ import { Hero } from './hero/hero'
 import { Projetos } from './projetos/projetos'
 import { Contact } from './contact/contact'
 import { About } from './about/about'
-import { Tecnologias } from './tecnologias/tecnologias'
+import { Technologies } from './technologies/technologies'
 
 export function Home() {
   return (
@@ -22,7 +22,7 @@ export function Home() {
       </section>
 
       <section id="tecnologias">
-        <Tecnologias />
+        <Technologies />
       </section>
 
       <section id="experiencias">
