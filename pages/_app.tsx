@@ -52,7 +52,9 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="O6z_RtoewTbcN7GDKr5fiw51wEtYjNAlNJyfcZdwFd8"
         />
 
-        <title>Ranielli Portfólio</title>
+        <title>
+          Ranielli Montagna
+        </title>
       </Head>
       <GlobalStyles />
       <Component {...pageProps} />

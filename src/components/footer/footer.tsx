@@ -1,11 +1,14 @@
-import { FaHeart } from 'react-icons/fa'
+import { useTranslation } from 'next-i18next'
 
 export function Footer() {
+  const { t: translate } = useTranslation()
+
   return (
     <footer>
       <div className="text-center p-4 text-white">
-        <button onClick={() => window.open('https://github.com/RanielliMontagna/nextlp', '_blank')}>
-          Feito com <FaHeart className="inline-block text-red-500" /> por <b>Ranielli Montagna</b>
+        {translate('footer')}{' '}
+        <button onClick={() => window.open('https://github.com/RanielliMontagna', '_blank')}>
+          <b>Ranielli Montagna</b>
         </button>
       </div>
     </footer>

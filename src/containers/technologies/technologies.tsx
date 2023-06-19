@@ -5,10 +5,10 @@ import SectionTitle from '@/components/sectionTitle/sectionTitle'
 
 import { Card } from './card/card'
 
-import reactLogo from '@/assets/svgs/tecnologias/react.svg'
-import typescriptLogo from '@/assets/svgs/tecnologias/typescript.svg'
-import javascriptLogo from '@/assets/svgs/tecnologias/javascript.svg'
-import nodeLogo from '@/assets/svgs/tecnologias/node.svg'
+import reactLogo from '@/assets/svgs/technologies/react.svg'
+import typescriptLogo from '@/assets/svgs/technologies/typescript.svg'
+import javascriptLogo from '@/assets/svgs/technologies/javascript.svg'
+import nodeLogo from '@/assets/svgs/technologies/node.svg'
 
 export function Technologies() {
   const { t: translate } = useTranslation('technologies')

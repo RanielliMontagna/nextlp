@@ -12,7 +12,7 @@ export function Experiences() {
 
   return (
     <div className="pb-16 mx-auto max-w-7xl">
-      <SectionTitle title="Experiências" />
+      <SectionTitle title={translate('sectionTitle')} />
 
       <motion.div className="flex flex-col gap-8 mx-auto items-center p-8 text-justify">
         {experiencesList?.map((experiencia, index) => (
