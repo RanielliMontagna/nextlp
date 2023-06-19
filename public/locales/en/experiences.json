@@ -1,0 +1,13 @@
+{
+  "sectionTitle": "Experiences",
+  "experiences": [
+    {
+      "title": "Front-end Developer",
+      "company": "SBSistemas",
+      "companyLink": "https://www.sbsistemas.com.br/",
+      "logoUrl": "assets/empresas/sbsistemas.svg",
+      "period": "May 2021 - Currently",
+      "description": "As a Tech Lead and Front-end Developer, I lead a team, ensure code quality, and optimize the usability of applications. I use React, TypeScript, JavaScript, and other tools, following agile methodologies and CI/CD practices. My goal is to lead the team, deliver consistent projects, and drive company growth."
+    }
+  ]
+}

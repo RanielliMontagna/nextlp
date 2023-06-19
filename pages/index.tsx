@@ -12,6 +12,7 @@ export async function getStaticProps({ locale }: GetStaticProps & { locale: stri
     'contact',
     'hero',
     'technologies',
+    'experiences',
   ])
 
   return {

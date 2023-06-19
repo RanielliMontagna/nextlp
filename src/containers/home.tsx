@@ -1,6 +1,6 @@
 import { Footer } from '@/components/footer/footer'
 
-import { Experiencias } from './experiencias/experiencias'
+import { Experiences } from './experiences/experiences'
 import { Header } from './header/header'
 import { Hero } from './hero/hero'
 import { Projetos } from './projetos/projetos'
@@ -26,7 +26,7 @@ export function Home() {
       </section>
 
       <section id="experiencias">
-        <Experiencias />
+        <Experiences />
       </section>
 
       <section id="projetos">
