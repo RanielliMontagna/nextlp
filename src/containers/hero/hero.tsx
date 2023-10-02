@@ -16,19 +16,19 @@ export function Hero() {
   const links = [
     {
       text: translate('buttons.about'),
-      href: '#sobre',
+      href: '#about',
     },
     {
       text: translate('buttons.experiences'),
-      href: '#experiencias',
+      href: '#experiences',
     },
     {
       text: translate('buttons.technologies'),
-      href: '#tecnologias',
+      href: '#technologies',
     },
     {
       text: translate('buttons.projects'),
-      href: '#projetos',
+      href: '#projects',
     },
   ]
 

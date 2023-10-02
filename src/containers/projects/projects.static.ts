@@ -1,11 +1,11 @@
-export interface IListaProjetos {
+export interface IProjectList {
   nome: string
   descricao: string
   github: string
   tecnologias: string[]
 }
 
-export const listaProjetos: IListaProjetos[] = [
+export const projectsList: IProjectList[] = [
   {
     nome: 'LaraFlix',
     descricao:

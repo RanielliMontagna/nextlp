@@ -3,13 +3,13 @@ import { motion } from 'framer-motion'
 import { BsFolder } from 'react-icons/bs'
 import { FiGithub } from 'react-icons/fi'
 
-import { IListaProjetos } from '../projetos.static'
+import { IProjectList } from '../projects.static'
 
-interface ICardProjeto extends IListaProjetos {
+interface IProjectCard extends IProjectList {
   index: number
 }
 
-export function CardProjeto({ nome, descricao, github, tecnologias, index }: ICardProjeto) {
+export function ProjectCard({ nome, descricao, github, tecnologias, index }: IProjectCard) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 + index * 10 }}

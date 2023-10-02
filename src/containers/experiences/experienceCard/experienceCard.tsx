@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { motion } from 'framer-motion'
 
 export interface ExperienceProps {
@@ -18,8 +17,6 @@ export function CardExperiencia({
   period,
   title,
 }: ExperienceProps) {
-  console.log(logoUrl)
-
   return (
     <motion.div
       initial={{ y: 100, opacity: 0 }}
@@ -28,10 +25,10 @@ export function CardExperiencia({
       className="bg-[#272a30] rounded-lg shadow-lg p-12 flex flex-col gap-4  max-w-4xl"
     >
       <div className="flex justify-center">
-        <Image
+        <img
           src={logoUrl}
           alt={`${company}-logo`}
-          className="w-32 h-32"
+          className="w-32 h-32 rounded-md"
           width={128}
           height={128}
         />

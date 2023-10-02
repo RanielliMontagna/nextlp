@@ -6,8 +6,16 @@
       "company": "SBSistemas",
       "companyLink": "https://www.sbsistemas.com.br/",
       "logoUrl": "assets/empresas/sbsistemas.svg",
-      "period": "May 2021 - Currently",
+      "period": "May 2021 - September 2023",
       "description": "As a Tech Lead and Front-end Developer, I lead a team, ensure code quality, and optimize the usability of applications. I use React, TypeScript, JavaScript, and other tools, following agile methodologies and CI/CD practices. My goal is to lead the team, deliver consistent projects, and drive company growth."
+    },
+    {
+      "title": "Developer",
+      "company": "Luizalabs",
+      "companyLink": "https://www.linkedin.com/company/luizalabs/mycompany/",
+      "logoUrl": "assets/empresas/luizalabs.png",
+      "period": "October 2023 - Currently",
+      "description": "As a Developer, I work in a consolidated company in the market, my goal is to contribute to the company's growth, delivering consistent and quality projects. In addition, I seek to develop professionally, learning from the best and sharing knowledge."
     }
   ]
 }
