@@ -1,3 +1,4 @@
+import { appWithTranslation } from 'next-i18next'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
 
@@ -33,7 +34,6 @@ function MyApp({ Component, pageProps }: AppProps) {
           property="og:description"
           content="Ranielli Montagna é um desenvolvedor de software apaixonado por tecnologia e inovação. Ele é um entusiasta de tecnologias web e mobile, e está sempre em busca de novos desafios."
         />
-        <meta property="fb:app_id" content="3803398276428135" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary" />
@@ -52,7 +52,9 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="O6z_RtoewTbcN7GDKr5fiw51wEtYjNAlNJyfcZdwFd8"
         />
 
-        <title>Ranielli Portfólio</title>
+        <title>
+          Ranielli Montagna
+        </title>
       </Head>
       <GlobalStyles />
       <Component {...pageProps} />
@@ -60,4 +62,4 @@ function MyApp({ Component, pageProps }: AppProps) {
   )
 }
 
-export default MyApp
+export default appWithTranslation(MyApp)

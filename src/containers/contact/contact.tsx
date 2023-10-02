@@ -1,23 +1,21 @@
+import { useTranslation } from 'next-i18next'
 import { motion } from 'framer-motion'
 
-import { SectionTitle } from '@/components/sectionTitle/sectionTitle'
+import SectionTitle from '@/components/sectionTitle/sectionTitle'
 import { email } from '@/shared/links'
 
-export function Contato() {
+export function Contact() {
+  const { t: translate } = useTranslation('contact')
+
   return (
     <div className="py-16 max-w-7xl flex flex-col items-center text-center mx-auto p-8">
-      <SectionTitle title="Contato" />
+      <SectionTitle title={translate('sectionTitle')} />
       <motion.div
         initial={{ y: 50, opacity: 0 }}
         transition={{ duration: 1.2 }}
         whileInView={{ opacity: 1, y: 0 }}
       >
-        <p className="max-w-4xl text-center text-lg">
-          Embora eu não esteja ativamente buscando novas oportunidades no momento, estou sempre
-          disponível e aberto para receber e-mails. Se você tiver alguma dúvida ou quiser apenas
-          dizer oi, não hesite em me contatar. Vou fazer o possível para responder o mais rápido
-          possível!
-        </p>
+        <p className="max-w-4xl text-center text-lg">{translate('description')}</p>
       </motion.div>
       <motion.div
         initial={{ y: 50, opacity: 0 }}
@@ -29,7 +27,7 @@ export function Contato() {
           hover:bg-emerald-900 transition duration-300 ease-in-out font-semibold"
           onClick={() => window.open(email)}
         >
-          Clique aqui para enviar um e-mail
+          {translate('buttonText')}
         </button>
       </motion.div>
     </div>

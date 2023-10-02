@@ -1,62 +1,55 @@
+import { useTranslation } from 'next-i18next'
 import Link from 'next/link'
 
-import { useTypewriter, Cursor } from 'react-simple-typewriter'
+import { Cursor } from 'react-simple-typewriter'
 import { motion } from 'framer-motion'
 
 import { theme } from '@/styles/theme'
+import perfilFoto from '@/assets/svgs/foto.svg'
+
+import { TypeWriter } from './typewriter'
 
 export function Hero() {
-  const [text] = useTypewriter({
-    words: ['Olá, meu nome é', 'Ranielli Montagna', 'Bem-vindo ao meu portfólio!'],
-    loop: true,
-    delaySpeed: 1000,
-  })
+  const { t: translate } = useTranslation('hero')
+  const words = translate('words', { returnObjects: true }) as string[]
 
   const links = [
     {
-      text: 'Sobre',
-      href: '#sobre',
+      text: translate('buttons.about'),
+      href: '#about',
     },
     {
-      text: 'Experiências',
-      href: '#experiencias',
+      text: translate('buttons.experiences'),
+      href: '#experiences',
     },
     {
-      text: 'Tecnologias',
-      href: '#tecnologias',
+      text: translate('buttons.technologies'),
+      href: '#technologies',
     },
     {
-      text: 'Projetos',
-      href: '#projetos',
+      text: translate('buttons.projects'),
+      href: '#projects',
     },
   ]
 
   return (
     <motion.div
-      initial={{
-        opacity: 0,
-        scale: 0.5,
-      }}
-      animate={{
-        opacity: 1,
-        scale: 1,
-      }}
-      transition={{
-        delay: 0.5,
-      }}
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ delay: 0.5 }}
       className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden"
     >
       <img
-        className="w-32 h-32 rounded-full relative mx-auto object-cover"
-        src="/assets/svgs/foto.svg"
+        {...perfilFoto}
         alt="Foto de perfil"
+        className="w-32 h-32 rounded-full relative mx-auto object-cover"
       />
       <div>
         <h2 className="text-sm uppercase text-gray-300 pb-2 tracking-[5px]">
-          Desenvolvedor Front-end
+          {translate('career')}
         </h2>
         <h1 className="text-2xl lg:text-5xl font-semibold px-10">
-          <span>{text}</span>
+          <TypeWriter words={words} />
           <Cursor cursorColor={theme.colors.accent} />
         </h1>
       </div>

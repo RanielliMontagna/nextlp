@@ -1,13 +1,21 @@
+import { useTranslation } from 'next-i18next'
 import { motion } from 'framer-motion'
 
-import { SectionTitle } from '@/components/sectionTitle/sectionTitle'
+import SectionTitle from '@/components/sectionTitle/sectionTitle'
 
 import { Card } from './card/card'
 
-export function Tecnologias() {
+import reactLogo from '@/assets/svgs/technologies/react.svg'
+import typescriptLogo from '@/assets/svgs/technologies/typescript.svg'
+import javascriptLogo from '@/assets/svgs/technologies/javascript.svg'
+import nodeLogo from '@/assets/svgs/technologies/node.svg'
+
+export function Technologies() {
+  const { t: translate } = useTranslation('technologies')
+
   return (
     <div className="pb-16">
-      <SectionTitle title="Tecnologias" />
+      <SectionTitle title={translate('sectionTitle')} />
 
       <div className="flex flex-col justify-evenly items-center max-w-7xl px-10 mx-auto">
         <motion.p
@@ -16,23 +24,21 @@ export function Tecnologias() {
           whileInView={{ opacity: 1, y: 0 }}
           className="text-center"
         >
-          Tenho expertise no desenvolvimento web, além de experiência em desenvolvimento mobile e
-          desktop. Abaixo, listo algumas das principais tecnologias com as quais trabalho de forma
-          proficientes.
+          {translate('description')}
         </motion.p>
 
         <div className="flex flex-col md:flex-row justify-center items-center mt-8">
           <div className="flex flex-row justify-center items-center gap-2">
             <Card
               title="React"
-              logoUrl="/assets/svgs/tecnologias/react.svg"
+              logo={reactLogo}
               siteUrl="https://reactjs.org/"
               duration={1.2}
               y={50}
             />
             <Card
               title="Typescript"
-              logoUrl="/assets/svgs/tecnologias/typescript.svg"
+              logo={typescriptLogo}
               siteUrl="https://www.typescriptlang.org/"
               duration={1.4}
               y={55}
@@ -41,14 +47,14 @@ export function Tecnologias() {
           <div className="flex flex-row justify-center items-center gap-2">
             <Card
               title="Javascript"
-              logoUrl="/assets/svgs/tecnologias/javascript.svg"
+              logo={javascriptLogo}
               siteUrl="https://www.javascript.com/"
               duration={1.6}
               y={60}
             />
             <Card
               title="Node"
-              logoUrl="/assets/svgs/tecnologias/node.svg"
+              logo={nodeLogo}
               siteUrl="https://nodejs.org/en/"
               duration={1.8}
               y={65}

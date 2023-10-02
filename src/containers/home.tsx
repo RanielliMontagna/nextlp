@@ -1,12 +1,12 @@
 import { Footer } from '@/components/footer/footer'
 
-import { Contato } from './contato/contato'
-import { Experiencias } from './experiencias/experiencias'
+import { Experiences } from './experiences/experiences'
 import { Header } from './header/header'
 import { Hero } from './hero/hero'
-import { Projetos } from './projetos/projetos'
-import { Sobre } from './sobre/sobre'
-import { Tecnologias } from './tecnologias/tecnologias'
+import { Projects } from './projects/projects'
+import { Contact } from './contact/contact'
+import { About } from './about/about'
+import { Technologies } from './technologies/technologies'
 
 export function Home() {
   return (
@@ -17,24 +17,24 @@ export function Home() {
         <Hero />
       </section>
 
-      <section id="sobre">
-        <Sobre />
+      <section id="about">
+        <About />
       </section>
 
-      <section id="tecnologias">
-        <Tecnologias />
+      <section id="technologies">
+        <Technologies />
       </section>
 
-      <section id="experiencias">
-        <Experiencias />
+      <section id="experiences">
+        <Experiences />
       </section>
 
-      <section id="projetos">
-        <Projetos />
+      <section id="projects">
+        <Projects />
       </section>
 
-      <section id="contato">
-        <Contato />
+      <section id="contact">
+        <Contact />
       </section>
 
       <Footer />
