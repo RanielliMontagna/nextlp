@@ -8,13 +8,8 @@ interface SectionTitleProps {
 function SectionTitle({ title }: SectionTitleProps) {
   return (
     <motion.div
-      initial={{
-        opacity: 0,
-        scale: 0,
-      }}
-      transition={{
-        duration: 0.8,
-      }}
+      initial={{ opacity: 0, scale: 0 }}
+      transition={{ duration: 0.8 }}
       whileInView={{ opacity: 1, scale: 1 }}
       className="flex justify-center pb-16 "
     >

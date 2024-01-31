@@ -1,5 +1,9 @@
 {
   "extends": ["next/core-web-vitals", "eslint:recommended"],
+  "plugins": ["jest"],
+  "env": {
+    "jest/globals": true
+  },
   "rules": {
     "@next/next/no-img-element": "off"
   }
