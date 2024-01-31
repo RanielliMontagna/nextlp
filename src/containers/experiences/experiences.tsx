@@ -15,9 +15,10 @@ export function Experiences() {
       <SectionTitle title={translate('sectionTitle')} />
 
       <motion.div className="flex flex-col-reverse gap-8 mx-auto items-center p-8 text-justify">
-        {experiencesList?.map((experiencia, index) => (
-          <CardExperiencia key={index} {...experiencia} />
-        ))}
+        {Array.isArray(experiencesList) &&
+          experiencesList.map((experiencia, index) => (
+            <CardExperiencia key={index} {...experiencia} />
+          ))}
       </motion.div>
     </div>
   )

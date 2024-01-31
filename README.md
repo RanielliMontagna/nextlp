@@ -16,6 +16,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [TypeScript](https://www.typescriptlang.org/)
 - [Emotion](https://emotion.sh/docs/introduction)
 - [TailwindCSS](https://tailwindcss.com/)
+- [Jest](https://jestjs.io/pt-BR/)
 
 ## ⚡️ Como executar
 
