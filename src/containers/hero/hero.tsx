@@ -8,6 +8,7 @@ import { theme } from '@/styles/theme'
 import perfilFoto from '@/assets/svgs/foto.svg'
 
 import { TypeWriter } from './typewriter'
+import Image from 'next/image'
 
 export function Hero() {
   const { t: translate } = useTranslation('hero')
@@ -39,7 +40,7 @@ export function Hero() {
       transition={{ delay: 0.5 }}
       className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden"
     >
-      <img
+      <Image
         {...perfilFoto}
         alt="Foto de perfil"
         className="w-32 h-32 rounded-full relative mx-auto object-cover"

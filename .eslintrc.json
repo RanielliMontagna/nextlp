@@ -5,6 +5,7 @@
     "jest/globals": true
   },
   "rules": {
-    "@next/next/no-img-element": "off"
+    "@next/next/no-img-element": "off",
+    "jsx-a11y/alt-text": "off"
   }
 }
