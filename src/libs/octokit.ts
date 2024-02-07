@@ -1,3 +1,4 @@
+import { Repo } from '@/contexts/app.context.types'
 import { Octokit } from 'octokit'
 
 const octokit = new Octokit({
@@ -12,7 +13,7 @@ async function getRepos() {
     },
   })
 
-  return response.data
+  return response.data as Repo[]
 }
 
 export { getRepos }

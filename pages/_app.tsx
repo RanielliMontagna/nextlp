@@ -3,7 +3,10 @@ import { AppProps } from 'next/app'
 import Head from 'next/head'
 
 import { GlobalStyles } from '../src/styles/globals.styles'
+import { AppProvider } from '@/contexts/app.context'
+
 import 'tailwindcss/tailwind.css'
+import 'react-loading-skeleton/dist/skeleton.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -55,7 +58,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>Ranielli Montagna</title>
       </Head>
       <GlobalStyles />
-      <Component {...pageProps} />
+      <AppProvider>
+        <Component {...pageProps} />
+      </AppProvider>
     </>
   )
 }

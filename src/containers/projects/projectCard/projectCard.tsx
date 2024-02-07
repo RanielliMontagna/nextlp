@@ -3,13 +3,13 @@ import { motion } from 'framer-motion'
 import { BsFolder } from 'react-icons/bs'
 import { FiGithub } from 'react-icons/fi'
 
-import { IProjectList } from '../projects.static'
+import { Repo } from '@/contexts/app.context.types'
 
-interface IProjectCard extends IProjectList {
+interface ProjectCardProps extends Repo {
   index: number
 }
 
-export function ProjectCard({ nome, descricao, github, tecnologias, index }: IProjectCard) {
+export function ProjectCard({ name, description, topics, html_url, index }: ProjectCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 + index * 10 }}
@@ -19,11 +19,9 @@ export function ProjectCard({ nome, descricao, github, tecnologias, index }: IPr
     >
       <motion.div
         initial={{ y: 0 }}
-        whileHover={{
-          y: -5,
-        }}
-        className="bg-[#272a30] rounded-lg shadow-lg p-8 flex flex-col space-y-4 relative pb-16 cursor-pointer"
-        onClick={() => window.open(github, '_blank')}
+        whileHover={{ y: -5 }}
+        className="bg-[#272a30] rounded-lg shadow-lg p-8 flex flex-col space-y-4 relative pb-16 cursor-pointer w-full"
+        onClick={() => window.open(html_url, '_blank')}
       >
         <div className="flex items-center justify-between">
           <BsFolder size={32} className="text-accent" />
@@ -36,21 +34,25 @@ export function ProjectCard({ nome, descricao, github, tecnologias, index }: IPr
         </div>
         <div className="flex flex-col">
           <div>
-            <h2 className="text-lg font-semibold ">{nome}</h2>
-            <p className="text-gray-300">{descricao}</p>
+            <h2 className="text-lg font-semibold ">{name}</h2>
+            <p className="text-gray-300">{description}</p>
           </div>
-          {/* align div in bottom */}
           <div className="flex gap-2 mt-4 flex-wrap absolute bottom-0 pb-4">
-            {tecnologias.map((tecnologia, index) => {
+            {topics?.slice(0, 3)?.map((topic, index) => {
               return (
                 <div
                   key={index}
                   className="px-2 py-1 bg-[#1e2126] rounded-lg text-gray-300 text-sm"
                 >
-                  {tecnologia}
+                  {topic}
                 </div>
               )
             })}
+            {topics?.length > 3 && (
+              <div className="px-2 py-1 bg-[#1e2126] rounded-lg text-gray-300 text-sm">
+                +{topics.length - 3}
+              </div>
+            )}
           </div>
         </div>
       </motion.div>
