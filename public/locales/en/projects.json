@@ -1,5 +1,34 @@
 {
-  "sectionTitle": "Projects",
-  "showLess": "Show Less",
-  "showMore": "Show More"
+  "sectionTitle": "Professional Projects",
+  "projects": [
+    {
+      "name": "Pratio",
+      "description": "Restaurant management platform. From point of sale, order management, to sales reports and analysis.",
+      "topics": ["React", "Electron", "TypeScript"]
+    },
+    {
+      "name": "Smart",
+      "description": "It is a design system developed based on Material Design, with the aim of standardizing the interface of products to improve the user experience.",
+      "topics": ["React", "Storybook", "Material-UI", "TypeScript", "Jest"]
+    },
+    {
+      "name": "Além do Arco-Íris App",
+      "description": "The 'Beyond the Rainbow' app offers the 'Ally: LGBT+ Health' course for healthcare professionals.",
+      "topics": ["Flutter", "Dart", "SQLite"]
+    },
+    {
+      "name": "Senna DS",
+      "description": "It is a design system used for Next.js projects, with the aim of standardizing the interface of products to improve the user experience.",
+      "topics": ["Next.js", "Shadcn", "Tailwind CSS", "Radix-Ui", "TypeScript", "Jest"]
+    },
+    {
+      "name": "Mobile Estoquista",
+      "description": "Stock control application, IMEI management, product separation and verification, and other features.",
+      "topics": ["React Native", "Jest", "TypeScript"]
+    },
+    {
+      "name": "And much more...",
+      "description": "In addition to the projects mentioned, I participated in many other projects, from small to large, with different technologies and challenges."
+    }
+  ]
 }

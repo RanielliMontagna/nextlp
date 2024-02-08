@@ -31,6 +31,10 @@ export function Hero() {
       text: translate('buttons.projects'),
       href: '#projects',
     },
+    {
+      text: translate('buttons.repositories'),
+      href: '#repos',
+    },
   ]
 
   return (
@@ -61,9 +65,7 @@ export function Hero() {
               x: index % 2 === 0 ? -200 : 200,
               opacity: 0,
             }}
-            transition={{
-              duration: 0.5,
-            }}
+            transition={{ duration: 0.5 }}
             whileInView={{ opacity: 1, x: 0 }}
             key={link.href}
           >
