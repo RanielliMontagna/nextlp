@@ -5,38 +5,36 @@ import { AppContextProps, Repo } from './app.context.types'
 export const AppContext = createContext({} as AppContextProps)
 
 export const AppProvider = ({ children }: { children: ReactNode }) => {
-  const [projects, setProjects] = useState<Repo[]>([])
-  const [projectsIsLoading, setProjectsIsLoading] = useState(true)
+  const [repos, setRepos] = useState<Repo[]>([])
+  const [reposIsLoading, setReposIsLoading] = useState(true)
 
-  async function fetchProjects() {
-    setProjectsIsLoading(true)
+  async function fetchRepo() {
+    setReposIsLoading(true)
 
     try {
       const response = await getRepos()
 
-      const sortedProjects = response.sort((a, b) => {
+      const sortedRepo = response.sort((a, b) => {
         return new Date(b.pushed_at).getTime() - new Date(a.pushed_at).getTime()
       })
 
-      const filteredProjects = sortedProjects.filter((project) => {
+      const filteredRepo = sortedRepo.filter((project) => {
         return !project.fork && !project.archived && project.description
       })
 
-      setProjects(filteredProjects)
+      setRepos(filteredRepo)
     } catch (error) {
-      console.error('Error fetching projects:', error)
+      console.error('Error fetching repo:', error)
     } finally {
-      setProjectsIsLoading(false)
+      setReposIsLoading(false)
     }
   }
 
   useEffect(() => {
-    fetchProjects()
+    fetchRepo()
   }, [])
 
-  return (
-    <AppContext.Provider value={{ projects, projectsIsLoading }}>{children}</AppContext.Provider>
-  )
+  return <AppContext.Provider value={{ repos, reposIsLoading }}>{children}</AppContext.Provider>
 }
 
 export const useAppContext = () => {

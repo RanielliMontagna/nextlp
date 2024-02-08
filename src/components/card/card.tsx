@@ -3,13 +3,18 @@ import { motion } from 'framer-motion'
 import { BsFolder } from 'react-icons/bs'
 import { FiGithub } from 'react-icons/fi'
 
-import { Repo } from '@/contexts/app.context.types'
+export interface ICard {
+  name: string
+  description: string
+  topics: string[]
+  githubUrl?: string
+}
 
-interface ProjectCardProps extends Repo {
+interface CardProps extends ICard {
   index: number
 }
 
-export function ProjectCard({ name, description, topics, html_url, index }: ProjectCardProps) {
+export function Card({ name, description, topics, githubUrl, index }: CardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 + index * 10 }}
@@ -20,17 +25,21 @@ export function ProjectCard({ name, description, topics, html_url, index }: Proj
       <motion.div
         initial={{ y: 0 }}
         whileHover={{ y: -5 }}
-        className="bg-[#272a30] rounded-lg shadow-lg p-8 flex flex-col space-y-4 relative pb-16 cursor-pointer w-full"
-        onClick={() => window.open(html_url, '_blank')}
+        className={`bg-[#272a30] rounded-lg shadow-lg p-8 flex flex-col space-y-4 relative pb-16 w-full ${
+          githubUrl ? 'cursor-pointer' : ''
+        }`}
+        onClick={() => window.open(githubUrl, '_blank')}
       >
         <div className="flex items-center justify-between">
           <BsFolder size={32} className="text-accent" />
-          <div>
-            <FiGithub
-              size={24}
-              className="text-white hover:text-accent transform hover:scale-110 transition duration-200"
-            />
-          </div>
+          {githubUrl && (
+            <div>
+              <FiGithub
+                size={24}
+                className="text-white hover:text-accent transform hover:scale-110 transition duration-200"
+              />
+            </div>
+          )}
         </div>
         <div className="flex flex-col">
           <div>

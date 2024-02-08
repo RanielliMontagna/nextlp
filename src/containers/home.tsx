@@ -3,10 +3,11 @@ import { Footer } from '@/components/footer/footer'
 import { Experiences } from './experiences/experiences'
 import { Header } from './header/header'
 import { Hero } from './hero/hero'
-import { Projects } from './projects/projects'
+import { Repos } from './repos/repos'
 import { Contact } from './contact/contact'
 import { About } from './about/about'
 import { Technologies } from './technologies/technologies'
+import { Projects } from './projects/projects'
 
 export function Home() {
   return (
@@ -31,6 +32,10 @@ export function Home() {
 
       <section id="projects">
         <Projects />
+      </section>
+
+      <section id="repos">
+        <Repos />
       </section>
 
       <section id="contact">

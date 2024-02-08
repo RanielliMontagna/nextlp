@@ -110,6 +110,6 @@ export interface Repo {
 }
 
 export interface AppContextProps {
-  projects: Repo[]
-  projectsIsLoading: boolean
+  repos: Repo[]
+  reposIsLoading: boolean
 }

@@ -14,12 +14,11 @@ export async function getStaticProps({ locale }: GetStaticProps & { locale: stri
     'technologies',
     'experiences',
     'projects',
+    'repos',
   ])
 
   return {
-    props: {
-      ...translations,
-    },
+    props: { ...translations },
   }
 }
 
