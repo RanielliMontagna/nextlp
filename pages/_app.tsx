@@ -3,7 +3,10 @@ import { AppProps } from 'next/app'
 import Head from 'next/head'
 
 import { GlobalStyles } from '../src/styles/globals.styles'
+import { AppProvider } from '@/contexts/app.context'
+
 import 'tailwindcss/tailwind.css'
+import 'react-loading-skeleton/dist/skeleton.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -38,7 +41,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         {/* Twitter */}
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:url" content="https://www.ranimontagna.com/" />
-        <meta name="twitter:creator" content="@ranii_montagna" />
+        <meta name="twitter:creator" content="@rannimontagna" />
         <meta name="twitter:title" content="Ranielli Montagna" />
         <meta
           name="twitter:description"
@@ -52,12 +55,12 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="O6z_RtoewTbcN7GDKr5fiw51wEtYjNAlNJyfcZdwFd8"
         />
 
-        <title>
-          Ranielli Montagna
-        </title>
+        <title>Ranielli Montagna</title>
       </Head>
       <GlobalStyles />
-      <Component {...pageProps} />
+      <AppProvider>
+        <Component {...pageProps} />
+      </AppProvider>
     </>
   )
 }

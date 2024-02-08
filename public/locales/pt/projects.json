@@ -1,3 +1,34 @@
 {
-  "sectionTitle": "Projetos"
+  "sectionTitle": "Projetos Profissionais",
+  "projects": [
+    {
+      "name": "Pratio",
+      "description": "Plataforma para gestão de restaurantes. Desde ponto de venda, gestão de pedidos, até relatórios e análises de vendas.",
+      "topics": ["React", "Electron", "TypeScript"]
+    },
+    {
+      "name": "Smart",
+      "description": "É um design system desenvolvido com base no Material Design, com o objetivo de padronizar a interface dos produtos para aprimorar a experiência do usuário.",
+      "topics": ["React", "Storybook", "Material-UI", "TypeScript", "Jest"]
+    },
+    {
+      "name": "Além do Arco-Íris App",
+      "description": "O app 'Além do Arco-íris' oferece o curso 'Ally: uma abordagem holística à saúde LGBT+' para capacitar profissionais de saúde na assistência à comunidade LGBT+.",
+      "topics": ["Flutter", "Dart", "SQLite"]
+    },
+    {
+      "name": "Senna DS",
+      "description": "É um design system utilizado para projetos Next.js, com o objetivo de padronizar a interface dos produtos para aprimorar a experiência do usuário.",
+      "topics": ["Next.js", "Shadcn", "Tailwind CSS", "Radix-Ui", "TypeScript", "Jest"]
+    },
+    {
+      "name": "Mobile Estoquista",
+      "description": "Aplicativo para controle de estoque, gestão de IMEI, separação e conferência de produtos, além de outras funcionalidades.",
+      "topics": ["React Native", "Jest", "TypeScript"]
+    },
+    {
+      "name": "E muito mais...",
+      "description": "Além dos projetos citados, participei de muitos outros projetos, desde pequenos até grandes, com diferentes tecnologias e desafios."
+    }
+  ]
 }
