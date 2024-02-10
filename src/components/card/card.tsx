@@ -25,7 +25,7 @@ export function Card({ name, description, topics, githubUrl, index }: CardProps)
       <motion.div
         initial={{ y: 0 }}
         whileHover={{ y: -5 }}
-        className={`bg-[#272a30] rounded-lg shadow-lg p-8 flex flex-col space-y-4 relative pb-16 w-full ${
+        className={`bg-[#272a30] rounded-lg shadow-lg p-8 flex flex-col space-y-4 relative w-full ${
           githubUrl ? 'cursor-pointer' : ''
         }`}
         onClick={() => window.open(githubUrl, '_blank')}
@@ -41,12 +41,12 @@ export function Card({ name, description, topics, githubUrl, index }: CardProps)
             </div>
           )}
         </div>
-        <div className="flex flex-col">
-          <div>
+        <div className="flex flex-col h-full">
+          <div className="flex flex-col flex-1">
             <h2 className="text-lg font-semibold ">{name}</h2>
             <p className="text-gray-300">{description}</p>
           </div>
-          <div className="flex gap-2 mt-4 flex-wrap absolute bottom-0 pb-4">
+          <div className="flex gap-2 mt-4 flex-wrap bottom-0">
             {topics?.slice(0, 3)?.map((topic, index) => {
               return (
                 <div
