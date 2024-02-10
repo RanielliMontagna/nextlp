@@ -45,7 +45,9 @@ export function Hero() {
       className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden"
     >
       <Image
-        {...perfilFoto}
+        src={perfilFoto.src}
+        width={perfilFoto.width}
+        height={perfilFoto.height}
         alt="Foto de perfil"
         className="w-32 h-32 rounded-full relative mx-auto object-cover"
       />
