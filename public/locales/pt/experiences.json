@@ -5,7 +5,7 @@
       "title": "Desenvolvedor Front-end",
       "company": "SBSistemas",
       "companyLink": "https://www.sbsistemas.com.br/",
-      "logoUrl": "assets/empresas/sbsistemas.svg",
+      "logoUrl": "/assets/empresas/sbsistemas.svg",
       "period": "Maio 2021 - Setembro 2023",
       "description": "Como Tech Lead e Desenvolvedor Front-end, liderava uma equipe, garantindo a qualidade do código e otimização a usabilidade das aplicações. Utilizava React, TypeScript, JavaScript e outras ferramentas, seguindo metodologias ágeis e práticas de CI/CD. Meu objetivo era liderar a equipe, entregar projetos consistentes e impulsionar o crescimento da empresa."
     },
@@ -13,7 +13,7 @@
       "title": "Desenvolvedor Pleno",
       "company": "Luizalabs",
       "companyLink": "https://www.linkedin.com/company/luizalabs/mycompany/",
-      "logoUrl": "assets/empresas/luizalabs.png",
+      "logoUrl": "/assets/empresas/luizalabs.png",
       "period": "Outubro 2023 - Atualmente",
       "description": "Como desevolvedor pleno, em uma empresa consolidada no mercado, meu objetivo é contribuir com o crescimento da empresa, entregando projetos consistentes e de qualidade. Além disso, busco me desenvolver profissionalmente, aprendendo com os melhores e compartilhando conhecimento."
     }

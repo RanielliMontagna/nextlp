@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export interface ExperienceProps {
   company: string
@@ -25,7 +26,7 @@ export function CardExperiencia({
       className="bg-[#272a30] rounded-lg shadow-lg p-12 flex flex-col gap-4  max-w-4xl"
     >
       <div className="flex justify-center">
-        <img
+        <Image
           src={logoUrl}
           alt={`${company}-logo`}
           className="w-32 h-32 rounded-md"
