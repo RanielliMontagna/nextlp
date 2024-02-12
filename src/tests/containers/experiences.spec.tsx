@@ -22,7 +22,7 @@ describe('Containers/Experiences', () => {
         company="company"
         companyLink="companyLink"
         description="description"
-        logoUrl="logoUrl"
+        logoUrl="/logoUrl"
         period="period"
         title="title"
       />
