@@ -12,10 +12,10 @@ const useMediaQuery = (query: string): boolean => {
 
     mediaQuery.addEventListener('change', handleChange)
 
-    // Verificar a condição inicial
+    // Verify if the media query matches when the component is mounted
     setMatches(mediaQuery.matches)
 
-    // Limpar o listener quando o componente for desmontado
+    // Clean up the event listener when the component is unmounted
     return () => {
       mediaQuery.removeEventListener('change', handleChange)
     }

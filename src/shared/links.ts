@@ -1,4 +1,6 @@
 export const email = 'mailto:raniellimontagna@hotmail.com'
-export const linkedin = 'https://www.linkedin.com/in/rannimontagna'
+export const site = 'https://www.ranimontagna.com'
 export const twitter = 'https://twitter.com/rannimontagna'
+export const github = 'https://github.com/RanielliMontagna'
+export const linkedin = 'https://www.linkedin.com/in/rannimontagna'
 export const instagram = 'https://www.instagram.com/raniellimontagna'

@@ -1,0 +1,8 @@
+export { About } from './about/about'
+export { Contact } from './contact/contact'
+export { Experiences } from './experiences/experiences'
+export { Header } from './header/header'
+export { Hero } from './hero/hero'
+export { Projects } from './projects/projects'
+export { Technologies } from './technologies/technologies'
+export { Repos } from './repos/repos'

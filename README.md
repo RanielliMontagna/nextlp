@@ -1,31 +1,9 @@
-# NextLP
+# example-app-router-single-locale
 
-## 🚧 Work in progress 🚧
+An example that showcases an app that only supports a single language and doesn't utilize i18n routing.
 
-## 💻 Projeto
+## Deploy your own
 
-Landing Page própria para meu portfólio. Desenvolvido utilizando o NextJS, que permite a
-criação de páginas estáticas e dinâmicas, além de ser uma ótima ferramenta para SEO.
+By deploying to [Vercel](https://vercel.com), you can check out the example in action. Note that you'll be prompted to create a new GitHub repository as part of this, allowing you to make subsequent changes.
 
-## 🚀 Tecnologias
-
-Esse projeto foi desenvolvido com as seguintes tecnologias:
-
-- [NextJS](https://nextjs.org/)
-- [ReactJS](https://reactjs.org)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Emotion](https://emotion.sh/docs/introduction)
-- [TailwindCSS](https://tailwindcss.com/)
-- [Jest](https://jestjs.io/pt-BR/)
-
-## ⚡️ Como executar
-
-- Clone o repositório
-- Instale as dependências com `yarn`
-- Inicie o servidor com `yarn dev`
-
-Agora você pode acessar [`localhost:3000`](http://localhost:3000) do seu navegador.
-
-## 📝 Licença
-
-Feito com 💜 por [Ranielli Montagna](https://github.com/RanielliMontagna)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/amannn/next-intl/tree/main/examples/example-app-router-single-locale)

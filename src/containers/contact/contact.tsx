@@ -1,21 +1,21 @@
-import { useTranslation } from 'next-i18next'
+import { useTranslations } from 'next-intl'
 import { motion } from 'framer-motion'
 
 import SectionTitle from '@/components/sectionTitle/sectionTitle'
 import { email } from '@/shared/links'
 
 export function Contact() {
-  const { t: translate } = useTranslation('contact')
+  const t = useTranslations('Contact')
 
   return (
     <div className="py-16 max-w-7xl flex flex-col items-center text-center mx-auto p-8">
-      <SectionTitle title={translate('sectionTitle')} />
+      <SectionTitle title={t('sectionTitle')} />
       <motion.div
         initial={{ y: 50, opacity: 0 }}
         transition={{ duration: 1.2 }}
         whileInView={{ opacity: 1, y: 0 }}
       >
-        <p className="max-w-4xl text-center text-lg">{translate('description')}</p>
+        <p className="max-w-4xl text-center text-lg">{t('description')}</p>
       </motion.div>
       <motion.div
         initial={{ y: 50, opacity: 0 }}
@@ -27,7 +27,7 @@ export function Contact() {
           hover:bg-emerald-900 transition duration-300 ease-in-out font-semibold"
           onClick={() => window.open(email)}
         >
-          {translate('buttonText')}
+          {t('buttonText')}
         </button>
       </motion.div>
     </div>

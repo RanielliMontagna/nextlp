@@ -1,0 +1,106 @@
+{
+  "Hero": {
+    "words": ["Hello, my name is", "Ranielli Montagna", "Welcome to my portfolio!"],
+    "career": "Front-end Developer",
+    "buttons": {
+      "about": "About",
+      "experiences": "Experiences",
+      "technologies": "Technologies",
+      "projects": "Projects",
+      "repositories": "Repositories"
+    }
+  },
+  "About": {
+    "sectionTitle": "About",
+    "title": "Hello, my name is",
+    "description": "I'm a passionate technology and design enthusiast with a strong focus on front-end development. Currently, I work at Luizalabs, where I bring my skills in web and mobile technologies to life. I graduated in Systems Analysis and Development from the University of Passo Fundo (UPF), and I'm always on the lookout for new opportunities to expand my knowledge and stay ahead in the tech world.",
+    "accessCV": "Access my CV"
+  },
+  "Technologies": {
+    "sectionTitle": "Technologies",
+    "description": "I have expertise in web development, as well as experience in mobile and desktop development. Below, I list some of the main technologies with which I work proficiently."
+  },
+  "Experiences": {
+    "sectionTitle": "Experiences",
+    "experiences": [
+      {
+        "title": "Front-end Developer",
+        "company": "SBSistemas",
+        "companyLink": "https://www.sbsistemas.com.br/",
+        "period": "May 2021 - May 2022",
+        "description": "My first professional experience in the tech field, where I was responsible for developing front-end applications. I utilized tools like React, Electron, and TypeScript, implementing best practices and strengthening my technical foundation. This position was essential in consolidating my knowledge of interface technologies and front-end development."
+      },
+      {
+        "title": "Tech Lead Front-end",
+        "company": "Smarten",
+        "companyLink": "https://www.smarten.com.br/",
+        "period": "May 2022 - September 2023",
+        "description": "As a tech lead, I coordinated a team of developers, ensuring code quality, application optimization, and usability. My role involved creating and maintaining a component design system, as well as making continuous improvements to existing systems. I worked with JavaScript, React, and implemented monitoring and CI/CD solutions, enhancing both efficiency and stability in the team’s applications. This experience provided me with a solid understanding of leadership, usability, and product scalability."
+      },
+      {
+        "title": "Mid-level Developer",
+        "company": "Luizalabs",
+        "companyLink": "https://www.linkedin.com/company/luizalabs/mycompany/",
+        "period": "October 2023 - Currently",
+        "description": "Currently, I’m part of the Luizalabs team, the tech innovation arm of Magalu, one of the largest retailers in Brazil. My role involves creating and maintaining web and mobile applications focused on Magalu's physical store operations, as well as supporting the maintenance of APIs and other backend solutions. I work with a diverse set of technologies, including React, React Native, Node, and Go, enabling the integration of robust and scalable solutions in a high-impact retail environment."
+      }
+    ]
+  },
+  "Projects": {
+    "sectionTitle": "Professional Projects",
+    "projects": [
+      {
+        "name": "Pratio",
+        "description": "Restaurant management platform. From point of sale, order management, to sales reports and analysis.",
+        "topics": ["React", "Electron", "TypeScript"]
+      },
+      {
+        "name": "Smart",
+        "description": "It is a design system developed based on Material Design, with the aim of standardizing the interface of products to improve the user experience.",
+        "topics": ["React", "Storybook", "Material-UI", "TypeScript", "Jest"]
+      },
+      {
+        "name": "Além do Arco-Íris App",
+        "description": "The 'Beyond the Rainbow' app offers the 'Ally: LGBT+ Health' course for healthcare professionals.",
+        "topics": ["Flutter", "Dart", "SQLite"]
+      },
+      {
+        "name": "Senna DS",
+        "description": "It is a design system used for Next.js projects, with the aim of standardizing the interface of products to improve the user experience.",
+        "topics": ["Next.js", "Shadcn", "Tailwind CSS", "Radix-Ui", "TypeScript", "Jest"]
+      },
+      {
+        "name": "Mobile Estoquista",
+        "description": "Stock control application, IMEI management, product separation and verification, and other features.",
+        "topics": ["React Native", "Jest", "TypeScript"]
+      },
+      {
+        "name": "And much more...",
+        "description": "In addition to the projects mentioned, I participated in many other projects, from small to large, with different technologies and challenges."
+      }
+    ]
+  },
+  "Repos": {
+    "sectionTitle": "Public Repositories",
+    "showLess": "Show Less",
+    "showMore": "Show More"
+  },
+  "Contact": {
+    "sectionTitle": "Contact",
+    "description": "I'm always available and open to receiving emails. If you have any questions, want to connect, or simply want to say hi, feel free to reach out. I'll do my best to respond as quickly as possible!",
+    "buttonText": "Send me an email"
+  },
+  "Common": {
+    "footer": "Made with ❤️ by"
+  },
+  "404": {
+    "title": "Are you lost?",
+    "description": "The page you are looking for does not exist or has been removed.",
+    "button": "Go to homepage"
+  },
+  "500": {
+    "title": "Oops, something went wrong",
+    "description": "We are sorry but it seems that something went wrong.",
+    "button": "Go to homepage"
+  }
+}
