@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl'
 import { motion } from 'framer-motion'
 import Skeleton from 'react-loading-skeleton'
 
-import SectionTitle from '@/components/sectionTitle/sectionTitle'
+import { SectionTitle } from '@/components/sectionTitle/sectionTitle'
 
 import { useAppContext } from '@/contexts/app.context'
 import { Card } from '@/components/card/card'
@@ -25,6 +25,7 @@ export function Repos() {
         {reposIsLoading
           ? Array.from({ length: 3 }).map((_, index) => (
               <motion.div
+                data-testid={`div-loading-${index}`}
                 key={index}
                 initial={{ opacity: 0, y: 50 + index * 10 }}
                 transition={{ duration: 0.5 + index * 0.1 }}
@@ -54,6 +55,7 @@ export function Repos() {
           className="flex justify-center mt-8"
         >
           <button
+            data-testid="show-more-or-less-button"
             onClick={() => setShowMore((prev) => !prev)}
             className="bg-transparent border-2 border-accent text-accent font-semibold py-2 px-6 rounded-lg hover:bg-accent hover:text-white transition duration-200"
           >

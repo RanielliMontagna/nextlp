@@ -3,8 +3,8 @@ import { useLocale } from 'next-intl'
 
 import { motion } from 'framer-motion'
 
-import SectionTitle from '@/components/sectionTitle/sectionTitle'
-import useMediaQuery from '@/hooks/useMediaQuery'
+import { SectionTitle } from '@/components/sectionTitle/sectionTitle'
+import { useMediaQuery } from '@/hooks/useMediaQuery'
 
 import perfilFoto from '@/assets/others/photo_with_background.png'
 

@@ -17,6 +17,7 @@ export function Card({ title, logo, siteUrl, duration = 1, y = 50 }: CardProps) 
       whileInView={{ opacity: 1, y: 0 }}
     >
       <div
+        data-testid={`card-tech-${title}`}
         className="flex flex-col items-center mt-4 md:mt-0 md:ml-4 hover:scale-110 transform transition duration-300 cursor-pointer w-20"
         onClick={() => window.open(siteUrl, '_blank')}
       >

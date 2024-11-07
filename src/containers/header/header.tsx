@@ -32,6 +32,8 @@ export function Header() {
           src={logo}
           alt="Logo"
           priority={true}
+          width={40}
+          height={40}
           className="w-10 hover:scale-110 transform duration-300 ease-in-out"
         />
       </motion.div>

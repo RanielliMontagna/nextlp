@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl'
 
-import SectionTitle from '@/components/sectionTitle/sectionTitle'
+import { SectionTitle } from '@/components/sectionTitle/sectionTitle'
 import { Card, ICard } from '@/components/card/card'
 
 export function Projects() {
