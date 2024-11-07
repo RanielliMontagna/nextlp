@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { FaLinkedinIn, FaInstagram, FaTwitter, FaEnvelope } from 'react-icons/fa'
 
 import { email, instagram, linkedin, twitter } from '@/shared/links'
-import logo from '@/assets/svgs/logo.svg'
+import logo from '@/assets/others/logo.svg'
 
 import { SocialMediaButton } from './socialMediaButton/socialMediaButton'
 import Image from 'next/image'
@@ -31,6 +31,9 @@ export function Header() {
         <Image
           src={logo}
           alt="Logo"
+          priority={true}
+          width={40}
+          height={40}
           className="w-10 hover:scale-110 transform duration-300 ease-in-out"
         />
       </motion.div>

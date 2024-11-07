@@ -1,21 +1,21 @@
-import { useTranslation } from 'next-i18next'
+import { useTranslations } from 'next-intl'
 import { motion } from 'framer-motion'
 
-import SectionTitle from '@/components/sectionTitle/sectionTitle'
+import { SectionTitle } from '@/components/sectionTitle/sectionTitle'
 
 import { Card } from './card/card'
 
-import reactLogo from '@/assets/svgs/technologies/react.svg'
-import typescriptLogo from '@/assets/svgs/technologies/typescript.svg'
-import javascriptLogo from '@/assets/svgs/technologies/javascript.svg'
-import nodeLogo from '@/assets/svgs/technologies/node.svg'
+import reactLogo from '@/assets/technologies/react.svg'
+import typescriptLogo from '@/assets/technologies/typescript.svg'
+import javascriptLogo from '@/assets/technologies/javascript.svg'
+import nodeLogo from '@/assets/technologies/node.svg'
 
 export function Technologies() {
-  const { t: translate } = useTranslation('technologies')
+  const t = useTranslations('Technologies')
 
   return (
     <div className="pb-16">
-      <SectionTitle title={translate('sectionTitle')} />
+      <SectionTitle title={t('sectionTitle')} />
 
       <div className="flex flex-col justify-evenly items-center max-w-7xl px-10 mx-auto">
         <motion.p
@@ -24,7 +24,7 @@ export function Technologies() {
           whileInView={{ opacity: 1, y: 0 }}
           className="text-center"
         >
-          {translate('description')}
+          {t('description')}
         </motion.p>
 
         <div className="flex flex-col md:flex-row justify-center items-center mt-8">

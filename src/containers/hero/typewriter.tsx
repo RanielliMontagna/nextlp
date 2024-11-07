@@ -1,4 +1,4 @@
-import { useTypewriter } from 'react-simple-typewriter'
+import { Cursor, useTypewriter } from 'react-simple-typewriter'
 
 interface TypeWriterProps {
   words: string[]
@@ -11,5 +11,10 @@ export function TypeWriter({ words }: TypeWriterProps) {
     delaySpeed: 1000,
   })
 
-  return <span>{text}</span>
+  return (
+    <>
+      <span>{text}</span>
+      <Cursor cursorColor="#05edab" />
+    </>
+  )
 }

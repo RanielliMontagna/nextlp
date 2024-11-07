@@ -1,23 +1,31 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 
+import LogoSB from '@/assets/empresas/sbsistemas.svg'
+import LogoSmarten from '@/assets/empresas/smarten.png'
+import LogoLuizaLabs from '@/assets/empresas/luizalabs.png'
+
 export interface ExperienceProps {
   company: string
   companyLink: string
   description: string
-  logoUrl: string
   period: string
   title: string
 }
 
-export function CardExperiencia({
+export function ExperienceCard({
   company,
   companyLink,
   description,
-  logoUrl,
   period,
   title,
 }: ExperienceProps) {
+  const srcImage = {
+    SBSistemas: LogoSB,
+    Smarten: LogoSmarten,
+    Luizalabs: LogoLuizaLabs,
+  }
+
   return (
     <motion.div
       initial={{ y: 100, opacity: 0 }}
@@ -27,7 +35,7 @@ export function CardExperiencia({
     >
       <div className="flex justify-center">
         <Image
-          src={logoUrl}
+          src={srcImage[company]}
           alt={`${company}-logo`}
           className="w-32 h-32 rounded-md"
           width={128}

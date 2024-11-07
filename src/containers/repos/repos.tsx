@@ -1,16 +1,16 @@
 import { useState } from 'react'
-import Skeleton from 'react-loading-skeleton'
-import { useTranslation } from 'next-i18next'
+import { useTranslations } from 'next-intl'
 import { motion } from 'framer-motion'
+import Skeleton from 'react-loading-skeleton'
 
-import SectionTitle from '@/components/sectionTitle/sectionTitle'
+import { SectionTitle } from '@/components/sectionTitle/sectionTitle'
 
 import { useAppContext } from '@/contexts/app.context'
 import { Card } from '@/components/card/card'
 
 export function Repos() {
   const { repos, reposIsLoading } = useAppContext()
-  const { t: translate } = useTranslation('repos')
+  const t = useTranslations('Repos')
 
   const maxRepos = 9
   const [showMore, setShowMore] = useState(false)
@@ -19,12 +19,13 @@ export function Repos() {
 
   return (
     <div className="pb-16">
-      <SectionTitle title={translate('sectionTitle')} />
+      <SectionTitle title={t('sectionTitle')} />
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto px-8">
         {reposIsLoading
           ? Array.from({ length: 3 }).map((_, index) => (
               <motion.div
+                data-testid={`div-loading-${index}`}
                 key={index}
                 initial={{ opacity: 0, y: 50 + index * 10 }}
                 transition={{ duration: 0.5 + index * 0.1 }}
@@ -54,10 +55,11 @@ export function Repos() {
           className="flex justify-center mt-8"
         >
           <button
+            data-testid="show-more-or-less-button"
             onClick={() => setShowMore((prev) => !prev)}
             className="bg-transparent border-2 border-accent text-accent font-semibold py-2 px-6 rounded-lg hover:bg-accent hover:text-white transition duration-200"
           >
-            {showMore ? translate('showLess') : translate('showMore')}
+            {showMore ? t('showLess') : t('showMore')}
           </button>
         </motion.div>
       )}

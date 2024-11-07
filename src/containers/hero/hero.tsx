@@ -1,40 +1,23 @@
-import { useTranslation } from 'next-i18next'
+import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 
-import { Cursor } from 'react-simple-typewriter'
 import { motion } from 'framer-motion'
 
-import { theme } from '@/styles/theme'
-import perfilFoto from '@/assets/svgs/foto.svg'
+import perfilFoto from '@/assets/others/photo.jpeg'
 
 import { TypeWriter } from './typewriter'
 import Image from 'next/image'
 
 export function Hero() {
-  const { t: translate } = useTranslation('hero')
-  const words = translate('words', { returnObjects: true }) as string[]
+  const t = useTranslations('Hero')
+  const words = t.raw('words')
 
   const links = [
-    {
-      text: translate('buttons.about'),
-      href: '#about',
-    },
-    {
-      text: translate('buttons.experiences'),
-      href: '#experiences',
-    },
-    {
-      text: translate('buttons.technologies'),
-      href: '#technologies',
-    },
-    {
-      text: translate('buttons.projects'),
-      href: '#projects',
-    },
-    {
-      text: translate('buttons.repositories'),
-      href: '#repos',
-    },
+    { text: t('buttons.about'), href: '#about' },
+    { text: t('buttons.experiences'), href: '#experiences' },
+    { text: t('buttons.technologies'), href: '#technologies' },
+    { text: t('buttons.projects'), href: '#projects' },
+    { text: t('buttons.repositories'), href: '#repos' },
   ]
 
   return (
@@ -45,19 +28,17 @@ export function Hero() {
       className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden"
     >
       <Image
+        priority={true}
         src={perfilFoto.src}
         width={perfilFoto.width}
         height={perfilFoto.height}
         alt="Foto de perfil"
-        className="w-32 h-32 rounded-full relative mx-auto object-cover"
+        className="w-32 h-32 rounded-full relative mx-auto object-cover shadow-lg lg:w-48 lg:h-48"
       />
       <div>
-        <h2 className="text-sm uppercase text-gray-300 pb-2 tracking-[5px]">
-          {translate('career')}
-        </h2>
+        <h2 className="text-sm uppercase text-gray-300 pb-2 tracking-[5px]">{t('career')}</h2>
         <h1 className="text-2xl lg:text-5xl font-semibold px-10">
           <TypeWriter words={words} />
-          <Cursor cursorColor={theme.colors.accent} />
         </h1>
       </div>
       <div className="pt-5 flex gap-2 flex-col sm:flex-row">

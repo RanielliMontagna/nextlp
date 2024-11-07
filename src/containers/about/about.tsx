@@ -1,18 +1,30 @@
-import { useTranslation } from 'next-i18next'
+import { useTranslations } from 'next-intl'
+import { useLocale } from 'next-intl'
+
 import { motion } from 'framer-motion'
 
-import SectionTitle from '@/components/sectionTitle/sectionTitle'
-import useMediaQuery from '@/hooks/useMediaQuery'
+import { SectionTitle } from '@/components/sectionTitle/sectionTitle'
+import { useMediaQuery } from '@/hooks/useMediaQuery'
 
-import perfilFoto from '@/assets/svgs/foto.svg'
+import perfilFoto from '@/assets/others/photo_with_background.png'
 
 export function About() {
-  const { t: translate } = useTranslation('about')
+  const locale = useLocale()
+  const t = useTranslations('About')
   const isMobile = useMediaQuery('(max-width: 600px)')
+
+  function handleOpenCV() {
+    if (locale === 'pt') {
+      window.open('/cv_pt.pdf', '_blank')
+      return
+    }
+
+    window.open('/cv_en.pdf', '_blank')
+  }
 
   return (
     <div className="pb-16">
-      <SectionTitle title={translate('sectionTitle')} />
+      <SectionTitle title={t('sectionTitle')} />
 
       <div
         className="flex flex-col relative text-center items-center
@@ -35,14 +47,14 @@ export function About() {
             whileInView={{ opacity: 1, x: 0, y: 0 }}
             className="text-4xl font-semibold mt-8"
           >
-            {translate('title')} <span className="text-accent underline">Ranielli</span>
+            {t('title')} <span className="text-accent underline">Ranielli</span>
           </motion.h4>
           <motion.div
             initial={{ y: isMobile ? 30 : 0, x: isMobile ? 0 : 100, opacity: 0 }}
             transition={{ duration: 1.2 }}
             whileInView={{ opacity: 1, x: 0, y: 0 }}
           >
-            <p className="text-sm md:text-md lg:text-lg text-justify">{translate('description')}</p>
+            <p className="text-sm md:text-md lg:text-lg text-justify">{t('description')}</p>
           </motion.div>
 
           <motion.div
@@ -53,9 +65,9 @@ export function About() {
             <button
               className="px-6 py-2 border border-gray-500 rounded-full uppercase text-xs 
                          tracking-widest text-gray-100 transition-all hover:border-accent hover:text-accent"
-              onClick={() => window.open('/cv.pdf', '_blank')}
+              onClick={handleOpenCV}
             >
-              {translate('accessCV')}
+              {t('accessCV')}
             </button>
           </motion.div>
         </div>

@@ -1,0 +1,106 @@
+{
+  "Hero": {
+    "words": ["Olá, meu nome é", "Ranielli Montagna", "Bem-vindo ao meu portfólio!"],
+    "career": "Desenvolvedor Front-end",
+    "buttons": {
+      "about": "Sobre",
+      "experiences": "Experiências",
+      "technologies": "Tecnologias",
+      "projects": "Projetos",
+      "repositories": "Repositórios"
+    }
+  },
+  "About": {
+    "sectionTitle": "Sobre",
+    "title": "Olá, meu nome é",
+    "description": "Sou um entusiasta de tecnologia e design com foco em desenvolvimento front-end. Atualmente, trabalho no Luizalabs, onde aplico minhas habilidades em tecnologias web e mobile. Sou formado em Análise e Desenvolvimento de Sistemas pela Universidade de Passo Fundo (UPF), e estou sempre em busca de novas oportunidades para expandir meu conhecimento e me manter à frente no mundo da tecnologia.",
+    "accessCV": "Acesse meu currículo"
+  },
+  "Technologies": {
+    "sectionTitle": "Tecnologias",
+    "description": "Tenho expertise no desenvolvimento web, além de experiência em desenvolvimento mobile e desktop. Abaixo, listo algumas das principais tecnologias com as quais trabalho de forma proficientes."
+  },
+  "Experiences": {
+    "sectionTitle": "Experiências",
+    "experiences": [
+      {
+        "title": "Desenvolvedor Front-end",
+        "company": "SBSistemas",
+        "companyLink": "https://www.sbsistemas.com.br/",
+        "period": "Maio 2021 - Maio 2022",
+        "description": "Minha primeira experiência profissional na área de tecnologia, onde fui responsável pelo desenvolvimento de aplicações voltadas para o front-end. Utilizei ferramentas como React, Electron e TypeScript, aplicando boas práticas e aprimorando minha base técnica. Essa posição foi essencial para consolidar meu conhecimento em tecnologias de interface e desenvolvimento front-end."
+      },
+      {
+        "title": "Tech Lead Front-end",
+        "company": "Smarten",
+        "companyLink": "https://www.smarten.com.br/",
+        "period": "Maio 2022 - Setembro 2023",
+        "description": "Como líder técnico, coordenei uma equipe de desenvolvedores, assegurando a qualidade do código e a otimização das aplicações. Minha atuação incluiu a criação e manutenção de um design system para componentes, além de melhorias contínuas em sistemas existentes. Trabalhei com JavaScript, React e implementei soluções de monitoramento e CI/CD, impulsionando a eficiência e a estabilidade das aplicações da equipe. A experiência me trouxe um forte entendimento de liderança, usabilidade e escalabilidade de produtos."
+      },
+      {
+        "title": "Desenvolvedor Pleno",
+        "company": "Luizalabs",
+        "companyLink": "https://www.linkedin.com/company/luizalabs/",
+        "period": "Outubro 2023 - Atualmente",
+        "description": "Atualmente, integro a equipe da Luizalabs, unidade de inovação tecnológica do Magalu, uma das maiores varejistas do Brasil. Minha função envolve a criação e manutenção de aplicações web e móveis focadas nas operações das lojas físicas do Magalu, bem como o suporte na manutenção de APIs e outras soluções backend. Trabalho com um conjunto variado de tecnologias, incluindo React, React Native, Node e Go, permitindo a integração de soluções robustas e escaláveis para um ambiente de alto impacto no varejo."
+      }
+    ]
+  },
+  "Projects": {
+    "sectionTitle": "Projetos Profissionais",
+    "projects": [
+      {
+        "name": "Pratio",
+        "description": "Plataforma para gestão de restaurantes. Desde ponto de venda, gestão de pedidos, até relatórios e análises de vendas.",
+        "topics": ["React", "Electron", "TypeScript"]
+      },
+      {
+        "name": "Smart",
+        "description": "É um design system desenvolvido com base no Material Design, com o objetivo de padronizar a interface dos produtos para aprimorar a experiência do usuário.",
+        "topics": ["React", "Storybook", "Material-UI", "TypeScript", "Jest"]
+      },
+      {
+        "name": "Além do Arco-Íris App",
+        "description": "O app 'Além do Arco-íris' oferece o curso 'Ally: uma abordagem holística à saúde LGBT+' para capacitar profissionais de saúde na assistência à comunidade LGBT+.",
+        "topics": ["Flutter", "Dart", "SQLite"]
+      },
+      {
+        "name": "Senna DS",
+        "description": "É um design system utilizado para projetos Next.js, com o objetivo de padronizar a interface dos produtos para aprimorar a experiência do usuário.",
+        "topics": ["Next.js", "Shadcn", "Tailwind CSS", "Radix-Ui", "TypeScript", "Jest"]
+      },
+      {
+        "name": "Mobile Estoquista",
+        "description": "Aplicativo para controle de estoque, gestão de IMEI, separação e conferência de produtos, além de outras funcionalidades.",
+        "topics": ["React Native", "Jest", "TypeScript"]
+      },
+      {
+        "name": "E muito mais...",
+        "description": "Além dos projetos citados, participei de muitos outros projetos, desde pequenos até grandes, com diferentes tecnologias e desafios."
+      }
+    ]
+  },
+  "Repos": {
+    "sectionTitle": "Repositórios Públicos",
+    "showLess": "Mostrar Menos",
+    "showMore": "Mostrar Mais"
+  },
+  "Contact": {
+    "sectionTitle": "Contato",
+    "description": "Estou sempre disponível e aberto a receber e-mails. Se você tiver alguma dúvida, quiser se conectar ou apenas dizer oi, sinta-se à vontade para entrar em contato. Farei o possível para responder o mais rápido possível!",
+    "buttonText": "Me envie um e-mail"
+  },
+  "Common": {
+    "footer": "Feito com ❤️ por"
+  },
+  "404": {
+    "title": "Você está perdido?",
+    "description": "A página que você está procurando não existe ou foi removida.",
+    "button": "Voltar para a página inicial"
+  },
+  "500": {
+    "title": "Erro interno do servidor",
+    "description": "Parece que algo deu errado! Se o problema persistir, entre em contato com o suporte.",
+    "button": "Voltar para a página inicial"
+  }
+}

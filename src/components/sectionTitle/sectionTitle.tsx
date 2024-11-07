@@ -1,4 +1,3 @@
-import { memo } from 'react'
 import { motion } from 'framer-motion'
 
 interface SectionTitleProps {
@@ -18,4 +17,4 @@ function SectionTitle({ title }: SectionTitleProps) {
   )
 }
 
-export default memo(SectionTitle)
+export { SectionTitle }
