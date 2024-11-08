@@ -16,8 +16,9 @@ export default defineConfig({
     setupFiles: ['src/__tests__/setup.ts'],
     coverage: {
       provider: 'v8',
-      reporter: ['text', 'json', 'html'],
+      reporter: ['text', 'json', 'json-summary', 'html'],
       reportsDirectory: './coverage',
+      reportOnFailure: true,
       include: ['src/**/*.tsx', 'src/**/*.ts'],
       exclude: ['.next', 'src/i18n', 'src/app', 'src/middleware.ts', 'src/__tests__'],
     },
