@@ -1,4 +1,4 @@
-import { fireEvent, render, screen } from './test-utils'
+import { act, fireEvent, render, screen } from './test-utils'
 import enMessages from '../../messages/en.json'
 
 import {
@@ -29,7 +29,9 @@ describe('Containers', () => {
     it('should render the about page with english locale and open the cv in english', () => {
       render(<About />, { locale: 'en' })
 
-      fireEvent.click(screen.getByText('Access my CV'))
+      act(() => {
+        fireEvent.click(screen.getByText('Access my CV'))
+      })
 
       screen.getByText('About')
     })
@@ -37,7 +39,9 @@ describe('Containers', () => {
     it('should render the about page with portuguese locale and open the cv in portuguese', () => {
       render(<About />, { locale: 'pt' })
 
-      fireEvent.click(screen.getByText('Acesse meu currículo'))
+      act(() => {
+        fireEvent.click(screen.getByText('Acesse meu currículo'))
+      })
 
       screen.getByText('Sobre')
     })
@@ -70,7 +74,9 @@ describe('Containers', () => {
 
       render(<Contact />, { locale: 'en' })
 
-      fireEvent.click(screen.getByText('Send me an email'))
+      act(() => {
+        fireEvent.click(screen.getByText('Send me an email'))
+      })
 
       expect(window.open).toHaveBeenCalledWith(email)
     })
@@ -97,7 +103,9 @@ describe('Containers', () => {
       const companyNameExample = enMessages.Experiences.experiences[0].company
       const companyLink = enMessages.Experiences.experiences[0].companyLink
 
-      fireEvent.click(screen.getByText(companyNameExample))
+      act(() => {
+        fireEvent.click(screen.getByText(companyNameExample))
+      })
 
       expect(window.open).toHaveBeenCalledWith(companyLink, '_blank')
     })
@@ -121,7 +129,9 @@ describe('Containers', () => {
 
       render(<Header />, { locale: 'en' })
 
-      fireEvent.click(screen.getByAltText('Logo'))
+      act(() => {
+        fireEvent.click(screen.getByAltText('Logo'))
+      })
 
       expect(window.scrollTo).toHaveBeenCalledWith({ top: 0, behavior: 'smooth' })
     })
@@ -177,7 +187,9 @@ describe('Containers', () => {
 
       render(<Repos />, { locale: 'en' })
 
-      fireEvent.click(screen.getByTestId('show-more-or-less-button'))
+      act(() => {
+        fireEvent.click(screen.getByTestId('show-more-or-less-button'))
+      })
 
       screen.getByText('Public Repositories')
     })
@@ -187,7 +199,6 @@ describe('Containers', () => {
 
       render(<Repos />, { locale: 'en' })
 
-      // div-loading-${index}
       screen.getByTestId('div-loading-0')
     })
   })
@@ -210,7 +221,10 @@ describe('Containers', () => {
 
       render(<Technologies />, { locale: 'en' })
 
-      fireEvent.click(screen.getByTestId('card-tech-React'))
+      act(() => {
+        fireEvent.click(screen.getByTestId('card-tech-React'))
+      })
+
       expect(window.open).toHaveBeenCalledWith('https://reactjs.org/', '_blank')
     })
   })

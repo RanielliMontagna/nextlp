@@ -1,4 +1,4 @@
-import { fireEvent, render, screen } from './test-utils'
+import { act, fireEvent, render, screen } from './test-utils'
 
 import { Card } from '@/components/card/card'
 import { Footer } from '@/components/footer/footer'
@@ -66,7 +66,9 @@ describe('Components', () => {
         />,
       )
 
-      fireEvent.click(screen.getByText('Card title'))
+      act(() => {
+        fireEvent.click(screen.getByText('Card title'))
+      })
 
       expect(window.open).toHaveBeenCalledWith('example.com', '_blank')
     })
@@ -84,7 +86,9 @@ describe('Components', () => {
 
       render(<Footer />)
 
-      fireEvent.click(screen.getByText('Ranielli Montagna'))
+      act(() => {
+        fireEvent.click(screen.getByText('Ranielli Montagna'))
+      })
 
       expect(window.open).toHaveBeenCalledWith(github, '_blank')
     })

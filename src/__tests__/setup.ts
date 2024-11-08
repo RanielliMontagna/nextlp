@@ -13,6 +13,12 @@ global.IntersectionObserver = class {
   }
 }
 
+// Mock window.open to avoid error - "window.open is not a function" in tests
+global.open = vi.fn()
+
+// Mock console.error to avoid error
+global.console.error = vi.fn()
+
 // Mock do matchMedia to avoid error - "matchMedia is not defined" in tests
 window.matchMedia =
   window.matchMedia ||
