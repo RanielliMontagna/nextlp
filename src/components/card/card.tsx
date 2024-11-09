@@ -28,7 +28,7 @@ export function Card({ name, description, topics, githubUrl, index }: CardProps)
         className={`bg-[#272a30] rounded-lg shadow-lg p-8 flex flex-col space-y-4 relative w-full ${
           githubUrl ? 'cursor-pointer' : ''
         }`}
-        onClick={() => window.open(githubUrl, '_blank')}
+        onClick={() => githubUrl && window.open(githubUrl, '_blank')}
       >
         <div className="flex items-center justify-between">
           <BsFolder size={32} className="text-accent" />
