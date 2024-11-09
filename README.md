@@ -1,19 +1,16 @@
-
 # Next LP
-
 
 ## 📚 Sobre o Projeto
 
 <div id='badges'>
     <img src="https://img.shields.io/github/last-commit/RanielliMontagna/nextlp?style=for-the-badge" alt="Last commit" width="150px"/>
-    <img src="https://img.shields.io/github/languages/top/RanielliMontagna/nextlp?style=for-the-badge" alt="Top language" width="140px"/>
+    <img src="https://img.shields.io/github/languages/top/RanielliMontagna/nextlp?style=for-the-badge" alt="Top language" width="120px"/>
+    <img src="https://img.shields.io/codecov/c/github/RanielliMontagna/nextlp?style=for-the-badge" alt="Coverage" width="110px"/>
 </div>
 
-
-Este projeto é meu portfólio pessoal, onde apresento meus projetos, habilidades e experiências profissionais. 
+Este projeto é meu portfólio pessoal, onde apresento meus projetos, habilidades e experiências profissionais.
 
 Para visualizar o projeto, acesse: [ranimontagna.com](https://www.ranimontagna.com/)
-
 
 ## 🚀 Tecnologias utilizadas
 
@@ -30,6 +27,7 @@ Para executar os testes, use o seguinte comando:
 ```bash
 pnpm run test
 ```
+
 Para gerar um relatório de cobertura de testes, use o seguinte comando:
 
 ```bash
@@ -37,11 +35,10 @@ pnpm run test:coverage
 ```
 
 ## 📄 Licença
+
 Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-
 ## 🔗 Author
-
 
 <div align="center">
   <p>
