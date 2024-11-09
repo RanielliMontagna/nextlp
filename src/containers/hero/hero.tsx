@@ -63,6 +63,7 @@ export function Hero() {
             key={link.href}
           >
             <button
+              data-testid={`hero-button-${link.text}`}
               onClick={() => handleScroll(link.href)}
               className="px-6 py-2 border border-gray-500 rounded-full uppercase text-xs 
                          tracking-widest text-gray-100 transition-all hover:border-accent hover:text-accent"
