@@ -12,7 +12,7 @@ function SectionTitle({ title }: SectionTitleProps) {
       whileInView={{ opacity: 1, scale: 1 }}
       className="flex justify-center pb-16 "
     >
-      <h3 className="top-24 uppercase tracking-[15px] text-2xl fill-text text-center">{title}</h3>
+      <h3 className="top-24 uppercase tracking-widest text-2xl fill-text text-center">{title}</h3>
     </motion.div>
   )
 }
