@@ -1,5 +1,4 @@
 import { useTranslations } from 'next-intl'
-import Link from 'next/link'
 
 import { motion } from 'framer-motion'
 
@@ -19,6 +18,17 @@ export function Hero() {
     { text: t('buttons.projects'), href: '#projects' },
     { text: t('buttons.repositories'), href: '#repos' },
   ]
+
+  const handleScroll = (href: string) => {
+    const element = document.querySelector(href)
+    if (element) {
+      const offset = 100 // Extra offset
+      const elementPosition = element.getBoundingClientRect().top
+      const offsetPosition = elementPosition + window.pageYOffset - offset
+
+      window.scrollTo({ top: offsetPosition, behavior: 'smooth' })
+    }
+  }
 
   return (
     <motion.div
@@ -41,7 +51,7 @@ export function Hero() {
           <TypeWriter words={words} />
         </h1>
       </div>
-      <div className="pt-5 flex gap-2 flex-col sm:flex-row">
+      <div className="pt-5 px-4 flex gap-2 flex-col sm:flex-row flex-wrap justify-center">
         {links.map((link, index) => (
           <motion.div
             initial={{
@@ -52,14 +62,14 @@ export function Hero() {
             whileInView={{ opacity: 1, x: 0 }}
             key={link.href}
           >
-            <Link href={link.href}>
-              <button
-                className="px-6 py-2 border border-gray-500 rounded-full uppercase text-xs 
+            <button
+              data-testid={`hero-button-${link.text}`}
+              onClick={() => handleScroll(link.href)}
+              className="px-6 py-2 border border-gray-500 rounded-full uppercase text-xs 
                          tracking-widest text-gray-100 transition-all hover:border-accent hover:text-accent"
-              >
-                {link.text}
-              </button>
-            </Link>
+            >
+              {link.text}
+            </button>
           </motion.div>
         ))}
       </div>

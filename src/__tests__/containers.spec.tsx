@@ -149,6 +149,29 @@ describe('Containers', () => {
 
       screen.getByText('Desenvolvedor Front-end')
     })
+
+    it('should be able to scroll to the about section', () => {
+      vi.spyOn(window, 'scrollTo')
+
+      vi.spyOn(document, 'querySelector').mockReturnValue({
+        //@ts-expect-error - Mocking the getBoundingClientRect function
+        getBoundingClientRect: () => ({ top: 100 }),
+      })
+
+      render(
+        <div>
+          <About />
+          <Hero />
+        </div>,
+        { locale: 'en' },
+      )
+
+      act(() => {
+        fireEvent.click(screen.getByTestId('hero-button-About'))
+      })
+
+      expect(window.scrollTo).toHaveBeenCalledOnce()
+    })
   })
 
   describe('Projects', () => {

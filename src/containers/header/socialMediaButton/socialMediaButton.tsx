@@ -18,8 +18,8 @@ export function SocialMediaButton({ Icon, link }: SocialMediaButtonProps) {
   return (
     <Link href={link} target="_blank" rel="noopener noreferrer">
       <Icon
-        className="w-6 h-6 fill-zinc-500 hover:fill-accent transition-all first-letter:
-      hover:-translate-y-1 hover:scale-110 transform duration-300 ease-in-out"
+        className="w-6 h-6 fill-zinc-300 hover:fill-accent transition-all first-letter:
+      hover:translate-y-1 hover:scale-110 transform duration-300 ease-in-out"
       />
     </Link>
   )
