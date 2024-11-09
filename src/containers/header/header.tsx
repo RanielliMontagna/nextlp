@@ -9,34 +9,28 @@ import Image from 'next/image'
 
 export function Header() {
   return (
-    <header className="sticky top-0 flex justify-between max-w-7xl mx-auto z-10 p-4">
-      <motion.div
-        initial={{ x: -500, opacity: 0, scale: 0.5 }}
-        animate={{ x: 0, opacity: 1, scale: 1 }}
-        transition={{ delay: 0.3 }}
-        className="flex gap-4 flex-1 justify-center md:flex-initial md:justify-start"
-      >
-        <SocialMediaButton link={linkedin} Icon={FaLinkedinIn} />
-        <SocialMediaButton link={instagram} Icon={FaInstagram} />
-        <SocialMediaButton link={twitter} Icon={FaTwitter} />
-        <SocialMediaButton link={email} Icon={FaEnvelope} />
-      </motion.div>
-      <motion.div
-        initial={{ x: 500, opacity: 0, scale: 0.5 }}
-        animate={{ x: 0, opacity: 1, scale: 1 }}
-        transition={{ delay: 0.3 }}
-        className="items-center hidden md:flex cursor-pointer"
-        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-      >
-        <Image
-          src={logo}
-          alt="Logo"
-          priority={true}
-          width={40}
-          height={40}
-          className="w-10 hover:scale-110 transform duration-300 ease-in-out"
-        />
-      </motion.div>
-    </header>
+    <div className="sticky top-0 z-10">
+      <header className="w-72 flex justify-center max-w-7xl mx-auto z-10 p-4 bg-background bg-opacity-50 backdrop-blur-lg border-b border-zinc-500 radius-b-2xl rounded-b-2xl">
+        <motion.div className="flex gap-4 flex-1 justify-center md:flex-initial md:justify-start">
+          <SocialMediaButton link={linkedin} Icon={FaLinkedinIn} />
+          <SocialMediaButton link={instagram} Icon={FaInstagram} />
+          <motion.div
+            className="cursor-pointer"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          >
+            <Image
+              src={logo}
+              alt="Logo"
+              priority={true}
+              width={40}
+              height={40}
+              className="w-10 hover:scale-110 transform duration-300 ease-in-out hover:translate-y-1"
+            />
+          </motion.div>
+          <SocialMediaButton link={twitter} Icon={FaTwitter} />
+          <SocialMediaButton link={email} Icon={FaEnvelope} />
+        </motion.div>
+      </header>
+    </div>
   )
 }
