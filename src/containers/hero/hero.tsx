@@ -41,7 +41,7 @@ export function Hero() {
           <TypeWriter words={words} />
         </h1>
       </div>
-      <div className="pt-5 flex gap-2 flex-col sm:flex-row">
+      <div className="pt-5 px-4 flex gap-2 flex-col sm:flex-row flex-wrap justify-center">
         {links.map((link, index) => (
           <motion.div
             initial={{
